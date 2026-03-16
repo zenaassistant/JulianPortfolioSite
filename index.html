@@ -2,7 +2,19 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8"/>
-<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=5.0,viewport-fit=cover"/>
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+<meta name="apple-mobile-web-app-title" content="Julian Macias PMHNP-BC"/>
+<meta name="mobile-web-app-capable" content="yes"/>
+<meta name="theme-color" content="#020308"/>
+<meta name="description" content="Julian Macias, PMHNP-BC — Board-certified Psychiatric Nurse Practitioner specializing in IV ketamine infusion therapy and TMS in Los Angeles, CA."/>
+<meta property="og:title" content="Julian Macias, PMHNP-BC — Interventional Psychiatry"/>
+<meta property="og:description" content="Board-certified PMHNP trained under Dr. Steven Mandel. 4+ years IV ketamine, 2 years TMS. Los Angeles, CA."/>
+<meta property="og:image" content="https://i.postimg.cc/MXj8tHRS/KCLA-Headshot.jpg"/>
+<meta property="og:type" content="website"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<link rel="apple-touch-icon" href="https://i.postimg.cc/MXj8tHRS/KCLA-Headshot.jpg"/>
 <title>Julian Macias, PMHNP-BC — Interventional Psychiatry</title>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" crossorigin="anonymous"/>
 <style>
@@ -89,7 +101,9 @@ h1.htitle{font-family:'Poppins',sans-serif;
 .hero-photo{width:260px;height:320px;border-radius:20px;overflow:hidden;
   border:2px solid rgba(168,216,218,.25);
   box-shadow:0 16px 50px rgba(0,0,0,.45);transform:rotate(1.5deg);flex-shrink:0}
-.hero-photo img{width:100%;height:100%;object-fit:cover;object-position:center 15%}
+.hero-photo img{width:100%;height:100%;object-fit:cover;object-position:center 15%;
+  image-rendering:auto;-webkit-backface-visibility:hidden;
+  backface-visibility:hidden;transform:translateZ(0)}
 
 /* GRADIENT BRIDGE */
 .bridge{display:none}
@@ -355,7 +369,8 @@ footer span{color:#a8d8da}
       </div>
     </div>
     <div class="hero-photo">
-              <img src="https://i.postimg.cc/MXj8tHRS/KCLA-Headshot.jpg" alt="Julian Macias PMHNP-BC"
+              <img src="https://res.cloudinary.com/dmzawpylu/image/upload/v1773689433/KCLA_Headshot_v.3_xw6lzw.jpg" alt="Julian Macias PMHNP-BC"
+        onerror="this.src='https://i.postimg.cc/MXj8tHRS/KCLA-Headshot.jpg'"
         onerror="this.src='https://i.imgur.com/2jLe1iE.jpg'"/>
     </div>
   </div>
