@@ -18,7 +18,9 @@
 <title>Julian Macias, PMHNP-BC — Interventional Psychiatry</title>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" crossorigin="anonymous"/>
 <style>
-*{margin:0;padding:0;box-sizing:border-box}
+*{margin:0;padding:0;box-sizing:border-box;max-width:100%}
+html,body{overflow-x:hidden!important;width:100%!important;max-width:100vw!important;position:relative}
+canvas{max-width:100%!important}
 html{scroll-behavior:smooth}
 body{font-family:-apple-system,'Segoe UI','Helvetica Neue',Arial,sans-serif;background:#F0FFF0;color:#1a2e2e;line-height:1.7;overflow-x:hidden}
 :root{
@@ -31,7 +33,8 @@ nav{position:fixed;top:14px;left:50%;transform:translateX(-50%);z-index:200;
   background:rgba(255,255,255,.82);backdrop-filter:blur(16px);
   border:1px solid var(--border);border-radius:40px;padding:0 1.5rem;
   display:flex;align-items:center;gap:1.75rem;height:50px;
-  box-shadow:0 4px 30px rgba(74,138,140,.1)}
+  box-shadow:0 4px 30px rgba(74,138,140,.1);
+  max-width:calc(100vw - 2rem);width:auto}
 .nb{font-family:-apple-system,'Segoe UI',Arial,sans-serif;color:var(--ad);font-weight:600;font-size:.88rem;white-space:nowrap}
 .stitle,.ecard h3,.pblock-title,.rec-name,.rec-modal-name,.tcauthor{font-family:-apple-system,'Segoe UI',Arial,sans-serif}
 .nl{display:flex;gap:1.4rem;list-style:none}
@@ -54,8 +57,7 @@ nav{position:fixed;top:14px;left:50%;transform:translateX(-50%);z-index:200;
 #hero{min-height:100vh;display:flex;align-items:center;
   padding:110px 5% 80px;position:relative;overflow:hidden;background:#020308;
   margin-bottom:0}
-#auroraCanvas{position:absolute;inset:0;width:100%;height:100%;z-index:0}
-#heroCanvas{position:absolute;inset:0;width:100%;height:100%;z-index:1;pointer-events:none}
+#auroraCanvas,#heroCanvas{position:absolute;top:0;left:0;width:100%!important;height:100%!important;max-width:100%!important}
 .hero-inner{position:relative;z-index:2;display:grid;
   grid-template-columns:1fr 220px;gap:3rem;align-items:center;max-width:920px;width:100%}
 .hero-glass{background:rgba(2,5,20,.72);backdrop-filter:blur(24px);
