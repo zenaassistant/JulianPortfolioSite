@@ -1,977 +1,911 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8"/>
-<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=5.0,viewport-fit=cover"/>
-<meta name="apple-mobile-web-app-capable" content="yes"/>
-<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
-<meta name="apple-mobile-web-app-title" content="Julian Macias PMHNP-BC"/>
-<meta name="mobile-web-app-capable" content="yes"/>
-<meta name="theme-color" content="#020308"/>
-<meta name="description" content="Julian Macias, PMHNP-BC — Board-certified Psychiatric Nurse Practitioner specializing in IV ketamine infusion therapy and TMS in Los Angeles, CA."/>
-<meta property="og:title" content="Julian Macias, PMHNP-BC — Interventional Psychiatry"/>
-<meta property="og:description" content="Board-certified PMHNP trained under Dr. Steven Mandel. 4+ years IV ketamine, 2 years TMS. Los Angeles, CA."/>
-<meta property="og:image" content="https://i.postimg.cc/MXj8tHRS/KCLA-Headshot.jpg"/>
-<meta property="og:type" content="website"/>
-<meta name="twitter:card" content="summary_large_image"/>
-<link rel="icon" type="image/jpeg" href="https://res.cloudinary.com/dmzawpylu/image/upload/v1773689433/KCLA_Headshot_v.3_xw6lzw.jpg"/>
-<link rel="apple-touch-icon" href="https://res.cloudinary.com/dmzawpylu/image/upload/v1773689433/KCLA_Headshot_v.3_xw6lzw.jpg"/>
-<title>Julian Macias, PMHNP-BC — Interventional Psychiatry | Los Angeles</title>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" crossorigin="anonymous"/>
-<style>
-*{margin:0;padding:0;box-sizing:border-box;max-width:100%}
-html,body{overflow-x:hidden!important;width:100%!important;max-width:100vw!important;position:relative}
-canvas{max-width:100%!important}
-html{scroll-behavior:smooth}
-body{font-family:-apple-system,'Segoe UI','Helvetica Neue',Arial,sans-serif;background:#F0FFF0;color:#1a2e2e;line-height:1.7;overflow-x:hidden}
-:root{
-  --bg:#F0FFF0;--surface:#fff;--accent:#4A8A8C;--al:#e0f2f1;
-  --ad:#2e6668;--text:#1a2e2e;--muted:#4a6a6c;--border:#d4ece8;--r:12px;
-}
+  <html lang="en">
+  <head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=5.0,viewport-fit=cover"/>
+  <meta name="apple-mobile-web-app-capable" content="yes"/>
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+  <meta name="apple-mobile-web-app-title" content="Julian Macias PMHNP-BC"/>
+  <meta name="mobile-web-app-capable" content="yes"/>
+  <meta name="theme-color" content="#020308"/>
+  <meta name="description" content="Julian Macias, PMHNP-BC — Board-certified Psychiatric Nurse Practitioner specializing in IV ketamine
+  infusion therapy and TMS in Los Angeles, CA."/>
+  <meta property="og:title" content="Julian Macias, PMHNP-BC — Interventional Psychiatry"/>
+  <meta property="og:description" content="Board-certified PMHNP trained under Dr. Steven Mandel. 4+ years IV ketamine, 2 years TMS. Los
+  Angeles, CA."/>
+  <meta property="og:image" content="https://i.postimg.cc/MXj8tHRS/KCLA-Headshot.jpg"/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content="https://julianmaciasPMHNP-bc.vercel.app/"/>
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:title" content="Julian Macias, PMHNP-BC — Interventional Psychiatry"/>
+  <meta name="twitter:description" content="Board-certified PMHNP trained under Dr. Steven Mandel. 4+ years IV ketamine, 2 years TMS. Los
+  Angeles, CA."/>
+  <meta name="twitter:image" content="https://i.postimg.cc/MXj8tHRS/KCLA-Headshot.jpg"/>
+  <link rel="canonical" href="https://julianmaciasPMHNP-bc.vercel.app/"/>
+  <link rel="icon" type="image/jpeg" href="https://res.cloudinary.com/dmzawpylu/image/upload/v1773689433/KCLA_Headshot_v.3_xw6lzw.jpg"/>
+  <link rel="apple-touch-icon" href="https://res.cloudinary.com/dmzawpylu/image/upload/v1773689433/KCLA_Headshot_v.3_xw6lzw.jpg"/>
+  <title>Julian Macias, PMHNP-BC — Interventional Psychiatry | Los Angeles</title>
+  <!-- Preconnect for faster font loading -->
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Poppins:wght@400;600;700&display=swap" 
+  rel="stylesheet" crossorigin="anonymous"/>
+  <style>
+  *{margin:0;padding:0;box-sizing:border-box;max-width:100%}
+  html,body{overflow-x:hidden!important;width:100%!important;max-width:100vw!important;position:relative}
+  canvas{max-width:100%!important}
+  html{scroll-behavior:smooth}
+  body{font-family:-apple-system,'Segoe UI','Helvetica
+  Neue',Arial,sans-serif;background:#F0FFF0;color:#1a2e2e;line-height:1.7;overflow-x:hidden}
+  :root{
+    --bg:#F0FFF0;--surface:#fff;--accent:#4A8A8C;--al:#e0f2f1;
+    --ad:#2e6668;--text:#1a2e2e;--muted:#4a6a6c;--border:#d4ece8;--r:12px;
+  }
 
-/* NAV */
-nav{position:fixed;top:14px;left:50%;transform:translateX(-50%);z-index:200;
-  background:rgba(255,255,255,.82);backdrop-filter:blur(16px);
-  border:1px solid var(--border);border-radius:40px;padding:0 1.5rem;
-  display:flex;align-items:center;gap:1.75rem;height:50px;
-  box-shadow:0 4px 30px rgba(74,138,140,.1);
-  max-width:calc(100vw - 2rem);width:auto}
-.nb{font-family:-apple-system,'Segoe UI',Arial,sans-serif;color:var(--ad);font-weight:600;font-size:.88rem;white-space:nowrap}
-.stitle,.ecard h3,.pblock-title,.rec-name,.rec-modal-name,.tcauthor{font-family:-apple-system,'Segoe UI',Arial,sans-serif}
-.nl{display:flex;gap:1.4rem;list-style:none}
-.nl a{color:var(--muted);text-decoration:none;font-size:.8rem;transition:color .2s;white-space:nowrap}
-.nl a:hover{color:var(--accent)}
-.ncta{background:var(--accent);color:#fff;border:none;padding:.38rem 1rem;
-  border-radius:20px;font-size:.8rem;cursor:pointer;font-family:'Inter',sans-serif;
-  font-weight:500;transition:all .2s;white-space:nowrap}
-.ncta:hover{background:var(--ad)}
-.ham{display:none;flex-direction:column;gap:4px;cursor:pointer}
-.ham span{width:20px;height:1.5px;background:var(--accent);border-radius:2px}
-.mmenu{display:none;position:fixed;top:76px;left:5%;right:5%;
-  background:rgba(255,255,255,.97);border:1px solid var(--border);
-  border-radius:16px;padding:1.5rem;z-index:199;backdrop-filter:blur(12px)}
-.mmenu.open{display:block}
-.mmenu a{display:block;color:var(--muted);text-decoration:none;
-  padding:.6rem 0;border-bottom:1px solid var(--border);font-size:.9rem}
+  /* NAV */
+  nav{position:fixed;top:14px;left:50%;transform:translateX(-50%);z-index:200;
+    background:rgba(255,255,255,.82);backdrop-filter:blur(16px);
+    border:1px solid var(--border);border-radius:40px;padding:0 1.5rem;
+    display:flex;align-items:center;gap:1.75rem;height:50px;
+    box-shadow:0 4px 30px rgba(74,138,140,.1);
+    max-width:calc(100vw - 2rem);width:auto}
+  .nb{font-family:-apple-system,'Segoe UI',Arial,sans-serif;color:var(--ad);font-weight:600;font-size:.88rem;white-space:nowrap}
+  .stitle,.ecard h3,.pblock-title,.rec-name,.rec-modal-name,.tcauthor{font-family:-apple-system,'Segoe UI',Arial,sans-serif}
+  .nl{display:flex;gap:1.4rem;list-style:none}
+  .nl a{color:var(--muted);text-decoration:none;font-size:.8rem;transition:color .2s;white-space:nowrap}
+  .nl a:hover{color:var(--accent)}
+  .ncta{background:var(--accent);color:#fff;border:none;padding:.38rem 1rem;
+    border-radius:20px;font-size:.8rem;cursor:pointer;font-family:'Inter',sans-serif;
+    font-weight:500;transition:all .2s;white-space:nowrap}
+  .ncta:hover{background:var(--ad)}
+  .ham{display:none;flex-direction:column;gap:4px;cursor:pointer;background:none;border:none;padding:4px}
+  .ham span{width:20px;height:1.5px;background:var(--accent);border-radius:2px;display:block}
+  .mmenu{display:none;position:fixed;top:76px;left:5%;right:5%;
+    background:rgba(255,255,255,.97);border:1px solid var(--border);
+    border-radius:16px;padding:1.5rem;z-index:199;backdrop-filter:blur(12px)}
+  .mmenu.open{display:block}
+  .mmenu a{display:block;color:var(--muted);text-decoration:none;
+    padding:.6rem 0;border-bottom:1px solid var(--border);font-size:.9rem}
 
-/* HERO */
-#hero{min-height:100vh;display:flex;align-items:center;
-  padding:110px 5% 80px;position:relative;overflow:hidden;background:#020308;
-  margin-bottom:0}
-#auroraCanvas,#heroCanvas{position:absolute;top:0;left:0;width:100%!important;height:100%!important;max-width:100%!important}
-.hero-inner{position:relative;z-index:2;display:grid;
-  grid-template-columns:1fr 220px;gap:3rem;align-items:center;max-width:920px;width:100%}
-.hero-glass{background:rgba(2,5,20,.72);backdrop-filter:blur(24px);
-  -webkit-backdrop-filter:blur(24px);border:1px solid rgba(168,216,218,.18);
-  border-radius:24px;padding:2.5rem 3rem}
-.hbadge{display:inline-flex;align-items:center;gap:.5rem;
-  background:rgba(255,255,255,.08);border:1px solid rgba(168,216,218,.3);
-  color:#a8d8da;padding:.32rem .95rem;border-radius:20px;
-  font-size:.76rem;letter-spacing:.06em;text-transform:uppercase;
-  font-weight:500;margin-bottom:1.4rem}
-.hbadge::before{content:'';width:6px;height:6px;border-radius:50%;
-  background:#4A8A8C;animation:pulse 2s infinite}
-@keyframes pulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.4;transform:scale(1.5)}}
-h1.htitle{font-family:'Poppins',sans-serif;
-  font-size:clamp(2rem,4.5vw,3.2rem);font-weight:700;line-height:1.15;margin-bottom:1rem;
-  color:#fff;text-shadow:0 2px 16px rgba(0,0,0,.6)}
-.word{display:inline-block;opacity:0;transform:translateY(18px);transition:opacity .5s,transform .5s}
-.word.show{opacity:1;transform:none}
-.accent-word{background:linear-gradient(135deg,#fff 0%,#e0f2f1 40%,#a8d8da 80%,#80cbc4 100%);
-  -webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;
-  filter:drop-shadow(0 2px 8px rgba(0,0,0,.4))}
-.hsub{color:rgba(255,255,255,.95);font-size:.95rem;max-width:520px;
-  margin-bottom:1.75rem;line-height:1.85;text-shadow:0 1px 6px rgba(0,0,0,.5);
-  opacity:0;animation:fadeIn .8s 1.2s forwards}
-@keyframes fadeIn{to{opacity:1}}
-.hbtns{display:flex;gap:1rem;flex-wrap:wrap;margin-bottom:2.5rem;
-  opacity:0;animation:fadeIn .8s 1.5s forwards}
-.btn-p{background:var(--accent);color:#fff;border:none;padding:.72rem 1.75rem;
-  border-radius:8px;font-size:.9rem;cursor:pointer;font-family:'Inter',sans-serif;
-  font-weight:500;transition:all .25s;text-decoration:none;display:inline-block}
-.btn-p:hover{background:var(--ad);transform:translateY(-2px);
-  box-shadow:0 8px 24px rgba(74,138,140,.35)}
-.btn-g{background:transparent;color:#e0f2f1;
-  border:1.5px solid rgba(168,216,218,.4);padding:.72rem 1.75rem;
-  border-radius:8px;font-size:.9rem;cursor:pointer;
-  font-family:'Inter',sans-serif;transition:all .25s;text-decoration:none;display:inline-block}
-.btn-g:hover{background:rgba(255,255,255,.1);transform:translateY(-2px)}
-.hstats{display:flex;gap:2rem;padding-top:1.75rem;
-  border-top:1px solid rgba(168,216,218,.2);
-  opacity:0;animation:fadeIn .8s 1.8s forwards}
-.snum{font-family:'Poppins',sans-serif;font-size:1.8rem;font-weight:700;color:#a8d8da}
-.slbl{font-size:.7rem;color:rgba(255,255,255,.45);text-transform:uppercase;letter-spacing:.06em}
-.hero-photo{width:260px;height:320px;border-radius:20px;overflow:hidden;
-  border:2px solid rgba(168,216,218,.25);
-  box-shadow:0 16px 50px rgba(0,0,0,.45);transform:rotate(1.5deg);flex-shrink:0}
-.hero-photo img{width:100%;height:100%;object-fit:cover;object-position:center 15%;
-  image-rendering:auto;-webkit-backface-visibility:hidden;
-  backface-visibility:hidden;transform:translateZ(0)}
+  /* HERO */
+  #hero{min-height:100vh;display:flex;align-items:center;
+    padding:110px 5% 80px;position:relative;overflow:hidden;background:#020308;
+    margin-bottom:0}
+  #auroraCanvas,#heroCanvas{position:absolute;top:0;left:0;width:100%!important;height:100%!important;max-width:100%!important}
+  .hero-inner{position:relative;z-index:2;display:grid;
+    grid-template-columns:1fr 220px;gap:3rem;align-items:center;max-width:920px;width:100%}
+  .hero-glass{background:rgba(2,5,20,.72);backdrop-filter:blur(24px);
+    -webkit-backdrop-filter:blur(24px);border:1px solid rgba(168,216,218,.18);
+    border-radius:24px;padding:2.5rem 3rem}
+  .hbadge{display:inline-flex;align-items:center;gap:.5rem;
+    background:rgba(255,255,255,.08);border:1px solid rgba(168,216,218,.3);
+    color:#a8d8da;padding:.32rem .95rem;border-radius:20px;
+    font-size:.76rem;letter-spacing:.06em;text-transform:uppercase;
+    font-weight:500;margin-bottom:1.4rem}
+  .hbadge::before{content:'';width:6px;height:6px;border-radius:50%;
+    background:#4A8A8C;animation:pulse 2s infinite}
+  @keyframes pulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.4;transform:scale(1.5)}}
+  h1.htitle{font-family:'Poppins',sans-serif;
+    font-size:clamp(2rem,4.5vw,3.2rem);font-weight:700;line-height:1.15;margin-bottom:1rem;
+    color:#fff;text-shadow:0 2px 16px rgba(0,0,0,.6)}
+  .word{display:inline-block;opacity:0;transform:translateY(18px);transition:opacity .5s,transform .5s}
+  .word.show{opacity:1;transform:none}
+  .accent-word{background:linear-gradient(135deg,#fff 0%,#e0f2f1 40%,#a8d8da 80%,#80cbc4 100%);
+    -webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;
+    filter:drop-shadow(0 2px 8px rgba(0,0,0,.4))}
+  .hsub{color:rgba(255,255,255,.95);font-size:.95rem;max-width:520px;
+    margin-bottom:1.75rem;line-height:1.85;text-shadow:0 1px 6px rgba(0,0,0,.5);
+    opacity:0;animation:fadeIn .8s 1.2s forwards}
+  @keyframes fadeIn{to{opacity:1}}
+  .hbtns{display:flex;gap:1rem;flex-wrap:wrap;margin-bottom:2.5rem;
+    opacity:0;animation:fadeIn .8s 1.5s forwards}
+  .btn-p{background:var(--accent);color:#fff;border:none;padding:.72rem 1.75rem;
+    border-radius:8px;font-size:.9rem;cursor:pointer;font-family:'Inter',sans-serif;
+    font-weight:500;transition:all .25s;text-decoration:none;display:inline-block}
+  .btn-p:hover{background:var(--ad);transform:translateY(-2px);
+    box-shadow:0 8px 24px rgba(74,138,140,.35)}
+  .btn-g{background:transparent;color:#e0f2f1;
+    border:1.5px solid rgba(168,216,218,.4);padding:.72rem 1.75rem;
+    border-radius:8px;font-size:.9rem;cursor:pointer;
+    font-family:'Inter',sans-serif;transition:all .25s;text-decoration:none;display:inline-block}
+  .btn-g:hover{background:rgba(255,255,255,.1);transform:translateY(-2px)}
+  .hstats{display:flex;gap:2rem;padding-top:1.75rem;
+    border-top:1px solid rgba(168,216,218,.2);
+    opacity:0;animation:fadeIn .8s 1.8s forwards}
+  .snum{font-family:'Poppins',sans-serif;font-size:1.8rem;font-weight:700;color:#a8d8da}
+  .slbl{font-size:.7rem;color:rgba(255,255,255,.45);text-transform:uppercase;letter-spacing:.06em}
+  .hero-photo{width:260px;height:320px;border-radius:20px;overflow:hidden;
+    border:2px solid rgba(168,216,218,.25);
+    box-shadow:0 16px 50px rgba(0,0,0,.45);transform:rotate(1.5deg);flex-shrink:0}
+  .hero-photo img{width:100%;height:100%;object-fit:cover;object-position:center 15%;
+    image-rendering:auto;-webkit-backface-visibility:hidden;
+    backface-visibility:hidden;transform:translateZ(0)}
 
-/* GRADIENT BRIDGE */
-.bridge{display:none}
-section{padding:86px 5%}
-.stag{font-size:.72rem;text-transform:uppercase;letter-spacing:.12em;
-  color:var(--accent);font-weight:600;margin-bottom:.55rem}
-.stitle{font-family:'Poppins',sans-serif;font-size:clamp(1.5rem,2.8vw,2.2rem);
-  color:var(--text);font-weight:700;margin-bottom:.8rem;line-height:1.2}
-.ssub{color:var(--muted);font-size:.95rem;max-width:570px;line-height:1.8;margin-bottom:2.5rem}
+  /* GRADIENT BRIDGE */
+  .bridge{display:none}
+  section{padding:86px 5%}
+  .stag{font-size:.72rem;text-transform:uppercase;letter-spacing:.12em;
+    color:var(--accent);font-weight:600;margin-bottom:.55rem}
+  .stitle{font-family:'Poppins',sans-serif;font-size:clamp(1.5rem,2.8vw,2.2rem);
+    color:var(--text);font-weight:700;margin-bottom:.8rem;line-height:1.2}
+  .ssub{color:var(--muted);font-size:.95rem;max-width:570px;line-height:1.8;margin-bottom:2.5rem}
 
-/* FEATURED QUOTE */
-.fquote{background:var(--al);border-left:4px solid var(--accent);
-  border-radius:0 12px 12px 0;padding:1.25rem 1.5rem;margin-bottom:2.5rem;
-  font-size:1rem;font-style:italic;color:var(--text);line-height:1.75}
-.fquote cite{display:block;font-style:normal;font-size:.78rem;
-  color:var(--muted);margin-top:.5rem;font-weight:500}
+  /* FEATURED QUOTE */
+  .fquote{background:var(--al);border-left:4px solid var(--accent);
+    border-radius:0 12px 12px 0;padding:1.25rem 1.5rem;margin-bottom:2.5rem;
+    font-size:1rem;font-style:italic;color:var(--text);line-height:1.75}
+  .fquote cite{display:block;font-style:normal;font-size:.78rem;
+    color:var(--muted);margin-top:.5rem;font-weight:500}
 
-/* COMPETENCIES */
-.comp-grid{display:flex;flex-wrap:wrap;gap:.5rem;margin-bottom:2.5rem}
-.comp{background:var(--surface);border:1px solid var(--border);color:var(--muted);
-  padding:.3rem .85rem;border-radius:20px;font-size:.78rem;font-weight:500;transition:all .2s}
-.comp:hover{background:var(--accent);color:#fff;border-color:var(--accent)}
+  /* COMPETENCIES */
+  .comp-grid{display:flex;flex-wrap:wrap;gap:.5rem;margin-bottom:2.5rem}
+  .comp{background:var(--surface);border:1px solid var(--border);color:var(--muted);
+    padding:.3rem .85rem;border-radius:20px;font-size:.78rem;font-weight:500;transition:all .2s}
+  .comp:hover{background:var(--accent);color:#fff;border-color:var(--accent)}
 
-/* PHILOSOPHY */
-#philosophy{background:var(--surface);box-shadow:inset 0 12px 40px rgba(0,0,0,.18)}
-.pgrid{display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:start}
-blockquote{border-left:3px solid var(--accent);padding-left:1.2rem;color:var(--text);
-  font-size:1rem;font-style:italic;line-height:1.85;margin:1.2rem 0}
-.pillars{display:flex;flex-wrap:wrap;gap:.45rem;margin-top:1.2rem}
-.pillar{background:var(--al);border:1px solid var(--border);color:var(--ad);
-  padding:.28rem .8rem;border-radius:20px;font-size:.78rem;font-weight:500;
-  transition:all .2s;cursor:default}
-.pillar:hover{background:var(--accent);color:#fff;transform:translateY(-2px)}
-.certs-list{margin-top:1.75rem}
-.cert-item{display:flex;align-items:center;gap:.6rem;padding:.5rem 0;
-  border-bottom:1px solid var(--border);font-size:.85rem;color:var(--muted)}
-.cert-item:last-child{border-bottom:none}
-.cert-dot{width:6px;height:6px;border-radius:50%;background:var(--accent);flex-shrink:0}
+  /* PHILOSOPHY */
+  #philosophy{background:var(--surface);box-shadow:inset 0 12px 40px rgba(0,0,0,.18)}
+  .pgrid{display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:start}
+  blockquote{border-left:3px solid var(--accent);padding-left:1.2rem;color:var(--text);
+    font-size:1rem;font-style:italic;line-height:1.85;margin:1.2rem 0}
+  .pillars{display:flex;flex-wrap:wrap;gap:.45rem;margin-top:1.2rem}
+  .pillar{background:var(--al);border:1px solid var(--border);color:var(--ad);
+    padding:.28rem .8rem;border-radius:20px;font-size:.78rem;font-weight:500;
+    transition:all .2s;cursor:default}
+  .pillar:hover{background:var(--accent);color:#fff;transform:translateY(-2px)}
+  .certs-list{margin-top:1.75rem;list-style:none}
+  .cert-item{display:flex;align-items:center;gap:.6rem;padding:.5rem 0;
+    border-bottom:1px solid var(--border);font-size:.85rem;color:var(--muted)}
+  .cert-item:last-child{border-bottom:none}
+  .cert-dot{width:6px;height:6px;border-radius:50%;background:var(--accent);flex-shrink:0}
 
-/* PROJECTS */
-#projects{background:var(--bg)}
-#projectGrid{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem}
-.pblock{background:var(--surface);border:1px solid var(--border);border-radius:var(--r);
-  overflow:hidden;cursor:pointer;transition:all .35s cubic-bezier(.4,0,.2,1);position:relative}
-.pblock::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;
-  background:linear-gradient(90deg,var(--accent),#a8d8da);
-  transform:scaleX(0);transform-origin:left;transition:transform .35s}
-.pblock:hover::before,.pblock.expanded::before{transform:scaleX(1)}
-.pblock-closed{padding:1.5rem;display:flex;flex-direction:column;align-items:center;text-align:center}
-.pblock.expanded .pblock-closed{display:none}
-.pblock-open{padding:1.5rem;display:none}
-.pblock.expanded .pblock-open{display:block}
-.pblock-icon{width:46px;height:46px;background:var(--al);border-radius:12px;
-  display:flex;align-items:center;justify-content:center;margin-bottom:.85rem;transition:transform .3s}
-.pblock:hover .pblock-icon{transform:scale(1.1) rotate(-3deg)}
-.pblock-title{font-family:'Poppins',sans-serif;font-size:.93rem;color:var(--text);
-  font-weight:600;margin-bottom:.35rem;line-height:1.35}
-.pblock-hint{color:var(--muted);font-size:.78rem;line-height:1.5;margin-bottom:.7rem}
-.pblock-arrow{color:var(--accent);font-size:.95rem;transition:transform .3s}
-.pblock:hover .pblock-arrow{transform:translateY(3px)}
-.pblock.expanded{box-shadow:0 8px 32px rgba(74,138,140,.14)}
-.pblock-open h3{font-family:'Poppins',sans-serif;font-size:.95rem;color:var(--text);
-  font-weight:600;margin-bottom:.65rem;line-height:1.35}
-.pblock-open p{color:var(--muted);font-size:.85rem;line-height:1.75}
-.pst{display:inline-block;font-size:.68rem;text-transform:uppercase;letter-spacing:.07em;
-  padding:.22rem .7rem;border-radius:12px;margin-bottom:.85rem;font-weight:600}
-.pst-p{background:var(--al);color:var(--ad);border:1px solid var(--border)}
-.pst-e{background:#fff8e1;color:#7a5c00;border:1px solid #f5d87a}
-.pgoal{color:var(--accent);font-weight:500;font-size:.78rem;margin-top:.75rem}
+  /* PROJECTS */
+  #projects{background:var(--bg)}
+  #projectGrid{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem}
+  .pblock{background:var(--surface);border:1px solid var(--border);border-radius:var(--r);
+    overflow:hidden;cursor:pointer;transition:all .35s cubic-bezier(.4,0,.2,1);position:relative}
+  .pblock::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;
+    background:linear-gradient(90deg,var(--accent),#a8d8da);
+    transform:scaleX(0);transform-origin:left;transition:transform .35s}
+  .pblock:hover::before,.pblock.expanded::before{transform:scaleX(1)}
+  .pblock-closed{padding:1.5rem;display:flex;flex-direction:column;align-items:center;text-align:center}
+  .pblock.expanded .pblock-closed{display:none}
+  .pblock-open{padding:1.5rem;display:none}
+  .pblock.expanded .pblock-open{display:block}
+  .pblock-icon{width:46px;height:46px;background:var(--al);border-radius:12px;
+    display:flex;align-items:center;justify-content:center;margin-bottom:.85rem;transition:transform .3s}
+  .pblock:hover .pblock-icon{transform:scale(1.1) rotate(-3deg)}
+  .pblock-title{font-family:'Poppins',sans-serif;font-size:.93rem;color:var(--text);
+    font-weight:600;margin-bottom:.35rem;line-height:1.35}
+  .pblock-hint{color:var(--muted);font-size:.78rem;line-height:1.5;margin-bottom:.7rem}
+  .pblock-arrow{color:var(--accent);font-size:.95rem;transition:transform .3s}
+  .pblock:hover .pblock-arrow{transform:translateY(3px)}
+  .pblock.expanded{box-shadow:0 8px 32px rgba(74,138,140,.14)}
+  .pblock-open h3{font-family:'Poppins',sans-serif;font-size:.95rem;color:var(--text);
+    font-weight:600;margin-bottom:.65rem;line-height:1.35}
+  .pblock-open p{color:var(--muted);font-size:.85rem;line-height:1.75}
+  .pst{display:inline-block;font-size:.68rem;text-transform:uppercase;letter-spacing:.07em;
+    padding:.22rem .7rem;border-radius:12px;margin-bottom:.85rem;font-weight:600}
+  .pst-p{background:var(--al);color:var(--ad);border:1px solid var(--border)}
+  .pst-e{background:#fff8e1;color:#7a5c00;border:1px solid #f5d87a}
+  .pgoal{color:var(--accent);font-weight:500;font-size:.78rem;margin-top:.75rem}
 
-/* EXPERTISE */
-#expertise{background:var(--ad)}
-#expertise .stag{color:#a8d8da}
-#expertise .stitle{color:#fff}
-#expertise .ssub{color:rgba(255,255,255,.6)}
-.egrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1.25rem}
-.ecard{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.11);
-  border-radius:var(--r);padding:1.6rem;transition:all .35s}
-.ecard:hover{background:rgba(255,255,255,.13);transform:translateY(-5px) rotateX(2deg)}
-.ecard.featured{background:rgba(168,216,218,.12);border-color:rgba(168,216,218,.3)}
-.eico{width:38px;height:38px;background:rgba(168,216,218,.15);border-radius:8px;
-  display:flex;align-items:center;justify-content:center;margin-bottom:1.1rem}
-.ecard h3{color:#fff;font-family:'Poppins',sans-serif;font-size:.92rem;font-weight:600;margin-bottom:.65rem}
-.ecard ul{list-style:none}
-.ecard ul li{color:rgba(255,255,255,.62);font-size:.82rem;padding:.28rem 0;
-  border-bottom:1px solid rgba(255,255,255,.07);display:flex;gap:.55rem;
-  align-items:flex-start;line-height:1.5}
-.ecard ul li::before{content:'';width:5px;height:5px;border-radius:50%;
-  background:#a8d8da;flex-shrink:0;margin-top:.5rem}
-.efeatured-badge{display:inline-block;background:rgba(168,216,218,.2);
-  color:#a8d8da;font-size:.65rem;font-weight:600;letter-spacing:.07em;
-  text-transform:uppercase;padding:.18rem .6rem;border-radius:8px;margin-bottom:.6rem}
+  /* EXPERTISE */
+  #expertise{background:var(--ad)}
+  #expertise .stag{color:#a8d8da}
+  #expertise .stitle{color:#fff}
+  #expertise .ssub{color:rgba(255,255,255,.6)}
+  .egrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1.25rem}
+  .ecard{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.11);
+    border-radius:var(--r);padding:1.6rem;transition:all .35s}
+  .ecard:hover{background:rgba(255,255,255,.13);transform:translateY(-5px) rotateX(2deg)}
+  .ecard.featured{background:rgba(168,216,218,.12);border-color:rgba(168,216,218,.3)}
+  .eico{width:38px;height:38px;background:rgba(168,216,218,.15);border-radius:8px;
+    display:flex;align-items:center;justify-content:center;margin-bottom:1.1rem}
+  .ecard h3{color:#fff;font-family:'Poppins',sans-serif;font-size:.92rem;font-weight:600;margin-bottom:.65rem}
+  .ecard ul{list-style:none}
+  .ecard ul li{color:rgba(255,255,255,.62);font-size:.82rem;padding:.28rem 0;
+    border-bottom:1px solid rgba(255,255,255,.07);display:flex;gap:.55rem;
+    align-items:flex-start;line-height:1.5}
+  .ecard ul li::before{content:'';width:5px;height:5px;border-radius:50%;
+    background:#a8d8da;flex-shrink:0;margin-top:.5rem}
+  .efeatured-badge{display:inline-block;background:rgba(168,216,218,.2);
+    color:#a8d8da;font-size:.65rem;font-weight:600;letter-spacing:.07em;
+    text-transform:uppercase;padding:.18rem .6rem;border-radius:8px;margin-bottom:.6rem}
 
-/* RECOMMENDATIONS */
-#recommendations{background:var(--bg)}
-.rec-carousel{position:relative;max-width:700px;margin:0 auto}
-.rec-track{display:flex;transition:transform .5s cubic-bezier(.4,0,.2,1)}
-.rec-slide{min-width:100%;display:flex;flex-direction:column;align-items:center;padding:0 4px}
-.rec-avatar-wrap{position:relative;cursor:pointer;margin-bottom:1.25rem}
-.rec-avatar{width:130px;height:130px;border-radius:50%;object-fit:cover;object-position:top;
-  border:3px solid var(--border);transition:all .3s;display:block}
-.rec-avatar-wrap::before{content:'';position:absolute;inset:-5px;border-radius:50%;
-  border:2px solid var(--accent);opacity:0;transition:opacity .3s;animation:spin 4s linear infinite}
-@keyframes spin{to{transform:rotate(360deg)}}
-.rec-avatar-wrap:hover::before{opacity:1}
-.rec-avatar-wrap:hover .rec-avatar{transform:scale(1.05);border-color:var(--accent)}
-.rec-click-hint{font-size:.72rem;color:var(--accent);text-align:center;margin-bottom:.5rem;
-  opacity:.7;letter-spacing:.04em}
-.rec-name{font-family:'Poppins',sans-serif;font-size:1rem;font-weight:600;
-  color:var(--text);text-align:center;margin-bottom:.2rem}
-.rec-title{font-size:.8rem;color:var(--muted);text-align:center;margin-bottom:.2rem}
-.rec-org{font-size:.75rem;color:var(--accent);font-weight:500;text-align:center;margin-bottom:1.25rem}
-.rec-preview{font-size:.9rem;color:var(--muted);text-align:center;font-style:italic;
-  max-width:520px;line-height:1.75;padding:0 1rem}
-.rec-ctrl{display:flex;align-items:center;justify-content:center;gap:1rem;margin-top:2rem}
-.rec-btn{width:38px;height:38px;border-radius:50%;border:1.5px solid var(--border);
-  background:var(--surface);color:var(--accent);cursor:pointer;display:flex;
-  align-items:center;justify-content:center;font-size:.95rem;transition:all .2s}
-.rec-btn:hover{background:var(--accent);color:#fff;border-color:var(--accent)}
-.rec-dots{display:flex;gap:.45rem;align-items:center}
-.rec-dot{width:7px;height:7px;border-radius:50%;background:var(--border);cursor:pointer;transition:all .2s}
-.rec-dot.active{background:var(--accent);width:20px;border-radius:4px}
+  /* RECOMMENDATIONS */
+  #recommendations{background:var(--bg)}
+  .rec-carousel{position:relative;max-width:700px;margin:0 auto}
+  .rec-track{display:flex;transition:transform .5s cubic-bezier(.4,0,.2,1)}
+  .rec-slide{min-width:100%;display:flex;flex-direction:column;align-items:center;padding:0 4px}
+  .rec-avatar-wrap{position:relative;cursor:pointer;margin-bottom:1.25rem}
+  .rec-avatar{width:130px;height:130px;border-radius:50%;object-fit:cover;object-position:top;
+    border:3px solid var(--border);transition:all .3s;display:block}
+  .rec-avatar-wrap::before{content:'';position:absolute;inset:-5px;border-radius:50%;
+    border:2px solid var(--accent);opacity:0;transition:opacity .3s;animation:spin 4s linear infinite}
+  @keyframes spin{to{transform:rotate(360deg)}}
+  .rec-avatar-wrap:hover::before{opacity:1}
+  .rec-avatar-wrap:hover .rec-avatar{transform:scale(1.05);border-color:var(--accent)}
+  .rec-click-hint{font-size:.72rem;color:var(--accent);text-align:center;margin-bottom:.5rem;
+    opacity:.7;letter-spacing:.04em}
+  .rec-name{font-family:'Poppins',sans-serif;font-size:1rem;font-weight:600;
+    color:var(--text);text-align:center;margin-bottom:.2rem}
+  .rec-title{font-size:.8rem;color:var(--muted);text-align:center;margin-bottom:.2rem}
+  .rec-org{font-size:.75rem;color:var(--accent);font-weight:500;text-align:center;margin-bottom:1.25rem}
+  .rec-preview{font-size:.9rem;color:var(--muted);text-align:center;font-style:italic;
+    max-width:520px;line-height:1.75;padding:0 1rem}
+  .rec-ctrl{display:flex;align-items:center;justify-content:center;gap:1rem;margin-top:2rem}
+  .rec-btn{width:38px;height:38px;border-radius:50%;border:1.5px solid var(--border);
+    background:var(--surface);color:var(--accent);cursor:pointer;display:flex;
+    align-items:center;justify-content:center;font-size:.95rem;transition:all .2s}
+  .rec-btn:hover{background:var(--accent);color:#fff;border-color:var(--accent)}
+  .rec-dots{display:flex;gap:.45rem;align-items:center}
+  .rec-dot{width:7px;height:7px;border-radius:50%;background:var(--border);cursor:pointer;transition:all .2s}
+  .rec-dot.active{background:var(--accent);width:20px;border-radius:4px}
 
-/* MODAL */
-.rec-modal-bg{display:none;position:fixed;inset:0;background:rgba(0,0,0,.55);
-  z-index:500;align-items:center;justify-content:center;padding:1.5rem;backdrop-filter:blur(4px)}
-.rec-modal-bg.open{display:flex}
-.rec-modal{background:var(--surface);border-radius:20px;max-width:560px;width:100%;
-  padding:2.5rem;position:relative;box-shadow:0 24px 60px rgba(0,0,0,.2);
-  max-height:85vh;overflow-y:auto}
-.rec-modal-close{position:absolute;top:1rem;right:1rem;width:32px;height:32px;
-  border-radius:50%;border:1.5px solid var(--border);background:var(--surface);
-  color:var(--muted);cursor:pointer;display:flex;align-items:center;justify-content:center;
-  font-size:1rem;transition:all .2s}
-.rec-modal-close:hover{background:var(--accent);color:#fff;border-color:var(--accent)}
-.rec-modal-header{display:flex;align-items:center;gap:1rem;margin-bottom:1.5rem;
-  padding-bottom:1.25rem;border-bottom:1px solid var(--border)}
-.rec-modal-avatar{width:60px;height:60px;border-radius:50%;object-fit:cover;
-  object-position:top;border:2px solid var(--border);flex-shrink:0}
-.rec-modal-name{font-family:'Poppins',sans-serif;font-size:.95rem;font-weight:600;color:var(--text)}
-.rec-modal-meta{font-size:.78rem;color:var(--muted);margin-top:.1rem}
-.rec-modal-org{font-size:.75rem;color:var(--accent);font-weight:500;margin-top:.1rem}
-.rec-modal-body{font-size:.9rem;color:var(--muted);line-height:1.85;font-style:italic}
-#testimonials{background:var(--surface)}
-.tcfilter{display:flex;gap:.55rem;margin-bottom:1.75rem;flex-wrap:wrap}
-.tcfbtn{padding:.32rem .95rem;border-radius:20px;border:1.5px solid var(--border);
-  background:transparent;color:var(--muted);font-size:.78rem;cursor:pointer;
-  font-family:'Inter',sans-serif;transition:all .2s}
-.tcfbtn.active{background:var(--accent);color:#fff;border-color:var(--accent)}
-.tcwrap{position:relative;perspective:1200px}
-.tctrack{display:flex;transition:transform .55s cubic-bezier(.4,0,.2,1)}
-.tcslide{min-width:100%;padding:0 4px}
-.tccard{background:var(--bg);border:1px solid var(--border);border-radius:18px;
-  padding:2.25rem;max-width:740px;margin:0 auto;position:relative;
-  transition:transform .3s;transform-style:preserve-3d}
-.tccard:hover{transform:rotateY(1.5deg) rotateX(1deg)}
-.tccard::before{content:'\201C';font-family:Georgia,serif;font-size:4.5rem;
-  color:var(--accent);opacity:.18;position:absolute;top:.3rem;left:1.3rem;line-height:1}
-.tcq{font-size:1rem;color:var(--text);line-height:1.88;font-style:italic;
-  margin-bottom:1.5rem;padding-top:1.25rem}
-.tcmeta{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.8rem}
-.tcauthor{font-weight:600;color:var(--text);font-size:.86rem}
-.tcsrc{font-size:.72rem;color:var(--muted)}
-.tcstars{color:#fbbc05;font-size:.86rem;letter-spacing:2px}
-.tcbadge{font-size:.67rem;padding:.18rem .6rem;border-radius:10px;font-weight:600}
-.tcbadge.yelp{background:#fde8e8;color:#c0392b}
-.tcbadge.google{background:#e8f0fe;color:#1a73e8}
-.tcctrl{display:flex;align-items:center;justify-content:center;gap:1rem;margin-top:1.75rem}
-.tcbtn{width:38px;height:38px;border-radius:50%;border:1.5px solid var(--border);
-  background:var(--surface);color:var(--accent);cursor:pointer;display:flex;
-  align-items:center;justify-content:center;font-size:.95rem;transition:all .2s}
-.tcbtn:hover{background:var(--accent);color:#fff;border-color:var(--accent);transform:scale(1.1)}
-.tcdots{display:flex;gap:.45rem;align-items:center}
-.tcdot{width:6px;height:6px;border-radius:50%;background:var(--border);cursor:pointer;transition:all .2s}
-.tcdot.active{background:var(--accent);width:20px;border-radius:4px}
+  /* MODAL */
+  .rec-modal-bg{display:none;position:fixed;inset:0;background:rgba(0,0,0,.55);
+    z-index:500;align-items:center;justify-content:center;padding:1.5rem;backdrop-filter:blur(4px)}
+  .rec-modal-bg.open{display:flex}
+  .rec-modal{background:var(--surface);border-radius:20px;max-width:560px;width:100%;
+    padding:2.5rem;position:relative;box-shadow:0 24px 60px rgba(0,0,0,.2);
+    max-height:85vh;overflow-y:auto}
+  .rec-modal-close{position:absolute;top:1rem;right:1rem;width:32px;height:32px;
+    border-radius:50%;border:1.5px solid var(--border);background:var(--surface);
+    color:var(--muted);cursor:pointer;display:flex;align-items:center;justify-content:center;
+    font-size:1rem;transition:all .2s}
+  .rec-modal-close:hover{background:var(--accent);color:#fff;border-color:var(--accent)}
+  .rec-modal-header{display:flex;align-items:center;gap:1rem;margin-bottom:1.5rem;
+    padding-bottom:1.25rem;border-bottom:1px solid var(--border)}
+  .rec-modal-avatar{width:60px;height:60px;border-radius:50%;object-fit:cover;
+    object-position:top;border:2px solid var(--border);flex-shrink:0}
+  .rec-modal-name{font-family:'Poppins',sans-serif;font-size:.95rem;font-weight:600;color:var(--text)}
+  .rec-modal-meta{font-size:.78rem;color:var(--muted);margin-top:.1rem}
+  .rec-modal-org{font-size:.75rem;color:var(--accent);font-weight:500;margin-top:.1rem}
+  .rec-modal-body{font-size:.9rem;color:var(--muted);line-height:1.85;font-style:italic}
+  #testimonials{background:var(--surface)}
+  .tcfilter{display:flex;gap:.55rem;margin-bottom:1.75rem;flex-wrap:wrap}
+  .tcfbtn{padding:.32rem .95rem;border-radius:20px;border:1.5px solid var(--border);
+    background:transparent;color:var(--muted);font-size:.78rem;cursor:pointer;
+    font-family:'Inter',sans-serif;transition:all .2s}
+  .tcfbtn.active{background:var(--accent);color:#fff;border-color:var(--accent)}
+  .tcwrap{position:relative;perspective:1200px}
+  .tctrack{display:flex;transition:transform .55s cubic-bezier(.4,0,.2,1)}
+  .tcslide{min-width:100%;padding:0 4px}
+  .tccard{background:var(--bg);border:1px solid var(--border);border-radius:18px;
+    padding:2.25rem;max-width:740px;margin:0 auto;position:relative;
+    transition:transform .3s;transform-style:preserve-3d}
+  .tccard:hover{transform:rotateY(1.5deg) rotateX(1deg)}
+  .tccard::before{content:'\201C';font-family:Georgia,serif;font-size:4.5rem;
+    color:var(--accent);opacity:.18;position:absolute;top:.3rem;left:1.3rem;line-height:1}
+  .tcq{font-size:1rem;color:var(--text);line-height:1.88;font-style:italic;
+    margin-bottom:1.5rem;padding-top:1.25rem}
+  .tcmeta{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.8rem}
+  .tcauthor{font-weight:600;color:var(--text);font-size:.86rem}
+  .tcsrc{font-size:.72rem;color:var(--muted)}
+  .tcstars{color:#fbbc05;font-size:.86rem;letter-spacing:2px}
+  .tcbadge{font-size:.67rem;padding:.18rem .6rem;border-radius:10px;font-weight:600}
+  .tcbadge.yelp{background:#fde8e8;color:#c0392b}
+  .tcbadge.google{background:#e8f0fe;color:#1a73e8}
+  .tcctrl{display:flex;align-items:center;justify-content:center;gap:1rem;margin-top:1.75rem}
+  .tcbtn{width:38px;height:38px;border-radius:50%;border:1.5px solid var(--border);
+    background:var(--surface);color:var(--accent);cursor:pointer;display:flex;
+    align-items:center;justify-content:center;font-size:.95rem;transition:all .2s}
+  .tcbtn:hover{background:var(--accent);color:#fff;border-color:var(--accent);transform:scale(1.1)}
+  .tcdots{display:flex;gap:.45rem;align-items:center}
+  .tcdot{width:6px;height:6px;border-radius:50%;background:var(--border);cursor:pointer;transition:all .2s}
+  .tcdot.active{background:var(--accent);width:20px;border-radius:4px}
 
-/* CONTACT */
-#contact{background:var(--bg)}
-.cgrid{display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:start}
-.avail-pills{display:flex;flex-wrap:wrap;gap:.45rem;margin-bottom:1.5rem}
-.avail{background:var(--surface);border:1px solid var(--border);color:var(--ad);
-  padding:.28rem .85rem;border-radius:20px;font-size:.78rem;font-weight:600}
-.avail.active{background:var(--al);border-color:var(--accent)}
-.cinfo-card{background:var(--surface);border:1px solid var(--border);
-  border-radius:16px;padding:1.75rem;display:flex;flex-direction:column;gap:.9rem}
-.cinfo-row{padding-bottom:.9rem;border-bottom:1px solid var(--border)}
-.cinfo-row:last-child{border-bottom:none;padding-bottom:0}
-.cinfo-label{font-size:.68rem;text-transform:uppercase;letter-spacing:.1em;
-  color:var(--muted);font-weight:600;margin-bottom:.4rem}
-.cinfo-link{display:flex;align-items:center;gap:.7rem;color:var(--text);
-  text-decoration:none;font-size:.97rem;font-weight:500;transition:color .2s}
-.cinfo-link:hover{color:var(--accent)}
-.cico{width:34px;height:34px;border-radius:8px;background:var(--al);
-  display:flex;align-items:center;justify-content:center;flex-shrink:0}
-.dl-btn{display:inline-flex;align-items:center;gap:.6rem;background:var(--accent);
-  color:#fff;padding:.72rem 1.5rem;border-radius:8px;font-size:.86rem;
-  font-weight:500;text-decoration:none;transition:all .25s;margin-top:1.5rem;border:none;cursor:pointer;font-family:'Inter',sans-serif}
-.dl-btn:hover{background:var(--ad);transform:translateY(-2px)}
+  /* CONTACT */
+  #contact{background:var(--bg)}
+  .cgrid{display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:start}
+  .avail-pills{display:flex;flex-wrap:wrap;gap:.45rem;margin-bottom:1.5rem}
+  .avail{background:var(--surface);border:1px solid var(--border);color:var(--ad);
+    padding:.28rem .85rem;border-radius:20px;font-size:.78rem;font-weight:600}
+  .avail.active{background:var(--al);border-color:var(--accent)}
+  .cinfo-card{background:var(--surface);border:1px solid var(--border);
+    border-radius:16px;padding:1.75rem;display:flex;flex-direction:column;gap:.9rem}
+  .cinfo-row{padding-bottom:.9rem;border-bottom:1px solid var(--border)}
+  .cinfo-row:last-child{border-bottom:none;padding-bottom:0}
+  .cinfo-label{font-size:.68rem;text-transform:uppercase;letter-spacing:.1em;
+    color:var(--muted);font-weight:600;margin-bottom:.4rem}
+  .cinfo-link{display:flex;align-items:center;gap:.7rem;color:var(--text);
+    text-decoration:none;font-size:.97rem;font-weight:500;transition:color .2s}
+  .cinfo-link:hover{color:var(--accent)}
+  .cico{width:34px;height:34px;border-radius:8px;background:var(--al);
+    display:flex;align-items:center;justify-content:center;flex-shrink:0}
+  .dl-btn{display:inline-flex;align-items:center;gap:.6rem;background:var(--accent);
+    color:#fff;padding:.72rem 1.5rem;border-radius:8px;font-size:.86rem;
+    font-weight:500;text-decoration:none;transition:all .25s;margin-top:1.5rem;border:none;cursor:pointer;font-family:'Inter',sans-serif}
+  .dl-btn:hover{background:var(--ad);transform:translateY(-2px)}
 
-footer{background:var(--ad);color:rgba(255,255,255,.5);text-align:center;padding:2rem 5%;font-size:.82rem}
-footer span{color:#a8d8da}
+  footer{background:var(--ad);color:rgba(255,255,255,.5);text-align:center;padding:2rem 5%;font-size:.82rem}
+  footer span{color:#a8d8da}
 
-/* SCROLL REVEAL */
-.sr{opacity:0;transform:translateY(28px);transition:opacity .7s ease,transform .7s ease}
-.sr.in{opacity:1;transform:none}
-.sr-delay-1{transition-delay:.1s}.sr-delay-2{transition-delay:.2s}.sr-delay-3{transition-delay:.3s}
+  /* SCROLL REVEAL */
+  .sr{opacity:0;transform:translateY(28px);transition:opacity .7s ease,transform .7s ease}
+  .sr.in{opacity:1;transform:none}
+  .sr-delay-1{transition-delay:.1s}.sr-delay-2{transition-delay:.2s}.sr-delay-3{transition-delay:.3s}
 
-@media(max-width:900px){
-  .hero-inner{grid-template-columns:1fr}
-  .hero-photo{display:none}
-}
-@media(max-width:768px){
-  nav{top:8px;padding:0 1rem;gap:1rem}
-  .nl,.ncta{display:none}.ham{display:flex}
-  .pgrid,.cgrid{grid-template-columns:1fr}
-  #projectGrid{grid-template-columns:1fr!important}
-  section{padding:58px 5%}
-  .hstats{gap:1.4rem}
-  .hero-glass{padding:1.75rem}
-}
-</style>
-</head>
-<body>
+  @media(max-width:900px){
+    .hero-inner{grid-template-columns:1fr}
+    .hero-photo{display:none}
+  }
+  @media(max-width:768px){
+    nav{top:8px;padding:0 1rem;gap:1rem}
+    .nl,.ncta{display:none}.ham{display:flex}
+    .pgrid,.cgrid{grid-template-columns:1fr}
+    #projectGrid{grid-template-columns:1fr!important}
+    section{padding:58px 5%}
+    .hstats{gap:1.4rem}
+    .hero-glass{padding:1.75rem}
+  }
+  </style>
+  </head>
+  <body>
 
-<nav>
-  <div class="nb">Julian Macias <span style="font-weight:400;color:var(--muted);font-size:.76rem">PMHNP-BC</span></div>
-  <ul class="nl">
-    <li><a href="#philosophy">About</a></li>
-    <li><a href="#expertise">Expertise</a></li>
-    <li><a href="#projects">Innovation</a></li>
-    <li><a href="#recommendations">References</a></li>
-    <li><a href="#testimonials">Reviews</a></li>
-    <li><a href="#contact">Contact</a></li>
-  </ul>
-  <button class="ncta" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Get In Touch</button>
-  <div class="ham" onclick="toggleMenu()"><span></span><span></span><span></span></div>
-</nav>
-<div class="mmenu" id="mmenu">
-  <a href="#philosophy" onclick="toggleMenu()">About</a>
-  <a href="#expertise" onclick="toggleMenu()">Expertise</a>
-  <a href="#projects" onclick="toggleMenu()">Innovation</a>
-  <a href="#testimonials" onclick="toggleMenu()">Reviews</a>
-  <a href="#contact" onclick="toggleMenu()">Contact</a>
-</div>
+  <!-- FIX: aria-label on nav, ham changed to <button> with aria attrs -->
+  <nav aria-label="Main navigation">
+    <div class="nb">Julian Macias <span style="font-weight:400;color:var(--muted);font-size:.76rem">PMHNP-BC</span></div>
+    <ul class="nl">
+      <li><a href="#philosophy">About</a></li>
+      <li><a href="#expertise">Expertise</a></li>
+      <li><a href="#projects">Innovation</a></li>
+      <li><a href="#recommendations">References</a></li>
+      <li><a href="#testimonials">Reviews</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button class="ncta" id="navCta">Get In Touch</button>
+    <button class="ham" id="hamBtn" aria-label="Open menu" aria-expanded="false" aria-controls="mmenu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
 
-<!-- HERO -->
-<section id="hero">
-  <canvas id="auroraCanvas"></canvas>
-  <canvas id="heroCanvas"></canvas>
-  <div class="hero-inner">
-    <div class="hero-glass">
-      <div class="hbadge">PMHNP-BC · ANCC Certified · Los Angeles, CA</div>
-      <h1 class="htitle" id="heroTitle"></h1>
-      <p class="hsub">Board-certified PMHNP trained under Dr. Steven Mandel at one of LA's highest-volume IV ketamine programs. 4+ years of hands-on infusion experience and 2 years TMS — with active DEA registration, CA NP license with furnishing number, and MagVenture certification.</p>
-      <div class="hbtns">
-        <a href="#expertise" class="btn-p">My Expertise</a>
-        <a href="#contact" class="btn-g">Get In Touch</a>
+  <!-- FIX: role="navigation" + aria-label on mobile menu -->
+  <nav class="mmenu" id="mmenu" aria-label="Mobile navigation">
+    <a href="#philosophy" id="mm-about">About</a>
+    <a href="#expertise" id="mm-expertise">Expertise</a>
+    <a href="#projects" id="mm-innovation">Innovation</a>
+    <a href="#testimonials" id="mm-reviews">Reviews</a>
+    <a href="#contact" id="mm-contact">Contact</a>
+  </nav>
+
+  <!-- FIX: <main> landmark wrapping all page content -->
+  <main>
+
+  <!-- HERO -->
+  <section id="hero">
+    <canvas id="auroraCanvas" aria-hidden="true"></canvas>
+    <canvas id="heroCanvas" aria-hidden="true"></canvas>
+    <div class="hero-inner">
+      <div class="hero-glass">
+        <div class="hbadge">PMHNP-BC · ANCC Certified · Los Angeles, CA</div>
+        <!-- FIX: pre-populated h1 so it exists without JS -->
+        <h1 class="htitle" id="heroTitle">Where evidence meets human connection.</h1>
+        <p class="hsub">Board-certified PMHNP trained under Dr. Steven Mandel at one of LA's highest-volume IV ketamine programs. 4+ years
+  of hands-on infusion experience and 2 years TMS — with active DEA registration, CA NP license with furnishing number, and MagVenture
+  certification.</p>
+        <div class="hbtns">
+          <a href="#expertise" class="btn-p">My Expertise</a>
+          <a href="#contact" class="btn-g">Get In Touch</a>
+        </div>
+        <div class="hstats">
+          <div><div class="snum" data-target="4" data-suffix="+">4+</div><div class="slbl">Years IV Ketamine</div></div>
+          <div><div class="snum" data-target="2" data-suffix="+">2+</div><div class="slbl">Years TMS</div></div>
+          <div><div class="snum" data-target="1000" data-suffix="s+" data-inc="10">0</div><div class="slbl">Patients Helped</div></div>
+        </div>
       </div>
-      <div class="hstats">
-        <div><div class="snum" data-target="4" data-suffix="+">4+</div><div class="slbl">Years IV Ketamine</div></div>
-        <div><div class="snum" data-target="2" data-suffix="+">2+</div><div class="slbl">Years TMS</div></div>
-        <div><div class="snum" data-target="1000" data-suffix="s+" data-inc="10">0</div><div class="slbl">Patients Helped</div></div>
-      </div>
-    </div>
-    <div class="hero-photo">
-              <img         src="https://julianmaciasPMHNP-bc.vercel.app/headshot.jpg" 
+      <!-- FIX: single valid img tag with width/height + proper fallback -->
+      <div class="hero-photo">
+        <img
+          src="https://julianmaciasPMHNP-bc.vercel.app/headshot.jpg"
           alt="Julian Macias PMHNP-BC"
-          style="width:100%;height:100%;object-fit:cover;object-position:center 15%;-webkit-backface-visibility:hidden;backface-visibility:hidden;transform:translateZ(0)"
-          onerror="this.style.display='none'"/>
-        onerror="this.onerror=null;this.src='https://julianmaciasPMHNP-bc.vercel.app/headshot.jpg'"/>
+          width="260"
+          height="320"
+          style="width:100%;height:100%;object-fit:cover;object-position:center
+  15%;-webkit-backface-visibility:hidden;backface-visibility:hidden;transform:translateZ(0)"
+   
+  onerror="this.onerror=null;this.src='https://res.cloudinary.com/dmzawpylu/image/upload/v1773689433/KCLA_Headshot_v.3_xw6lzw.jpg'"/>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- GRADIENT BRIDGE -->
-<div class="bridge"></div>
+  <div class="bridge"></div>
 
-<!-- ABOUT / PHILOSOPHY -->
-<section id="philosophy">
-  <div class="pgrid">
+  <!-- ABOUT / PHILOSOPHY -->
+  <section id="philosophy">
+    <div class="pgrid">
+      <div class="sr">
+        <div class="stag">About</div>
+        <h2 class="stitle">The Clinician Behind the Care</h2>
+        <p style="color:var(--muted);line-height:1.8;margin-bottom:1.25rem">Julian's path to psychiatry wasn't linear. After careers in
+  business and solar energy — work that sharpened his eye for systems, operations, and human behavior — he made a deliberate turn toward
+  nursing, driven by a conviction that mental health care needed deeper reform.</p>
+        <p style="color:var(--muted);line-height:1.8;margin-bottom:1.25rem">He earned his BSN cum laude from CSUN, his BA in Psychology
+  from Vanguard University, and his Master's (PMHNP-BC) cum laude from Western University of Health Sciences in 2025. For over four years
+  he has worked under Dr. Steven Mandel at Ketamine Clinics Los Angeles — one of the country's highest-volume IV ketamine programs —
+  administering up to 10 infusions per day with a consistent record of patient safety.</p>
+        <blockquote>"Ketamine opens a neuroplastic window — a moment of heightened neural flexibility. My role is to help patients step
+  through it toward lasting change."</blockquote>
+        <div class="pillars" style="margin-top:1.1rem">
+          <span class="pillar">Mental</span><span class="pillar">Spiritual</span>
+          <span class="pillar">Emotional</span><span class="pillar">Physical</span>
+          <span class="pillar">Social</span>
+        </div>
+
+        <div style="margin-top:1.75rem">
+          <div 
+  style="font-size:.72rem;text-transform:uppercase;letter-spacing:.1em;color:var(--accent);font-weight:600;margin-bottom:.75rem">Licenses
+  &amp; Certifications</div>
+          <!-- FIX: semantic <ul> list for certifications -->
+          <ul class="certs-list">
+            <li class="cert-item"><div class="cert-dot"></div>PMHNP-BC — ANCC, Active (2025)</li>
+            <li class="cert-item"><div class="cert-dot"></div>California NP License &amp; Furnishing Number — Active</li>
+            <li class="cert-item"><div class="cert-dot"></div>DEA Registration — Schedules II–V, Active</li>
+            <li class="cert-item"><div class="cert-dot"></div>TMS Certification, MagVenture — 2023</li>
+            <li class="cert-item"><div class="cert-dot"></div>BLS · ACLS — Current</li>
+            <li class="cert-item"><div class="cert-dot"></div>Registered Nurse License — Active</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="sr sr-delay-1">
+        <div style="margin-bottom:1.75rem">
+          <div 
+  style="font-size:.72rem;text-transform:uppercase;letter-spacing:.1em;color:var(--accent);font-weight:600;margin-bottom:.85rem">Core
+  Competencies</div>
+          <div class="comp-grid">
+            <span class="comp">IV Ketamine Therapy</span>
+            <span class="comp">TMS Mapping &amp; Optimization</span>
+            <span class="comp">Psychiatric Assessment</span>
+            <span class="comp">Medication Management</span>
+            <span class="comp">Trauma-Informed Care</span>
+            <span class="comp">Mind-Body Integration</span>
+            <span class="comp">Interventional Psychiatry</span>
+            <span class="comp">Collaborative Treatment Planning</span>
+            <span class="comp">Patient Safety &amp; Monitoring</span>
+            <span class="comp">EMR Documentation</span>
+            <span class="comp">Conversational Spanish (developing)</span>
+            <span class="comp">Clinical Leadership</span>
+          </div>
+        </div>
+        <canvas id="neuralCanvas" aria-hidden="true" style="width:100%;height:240px;border-radius:16px;display:block"></canvas>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERTISE -->
+  <section id="expertise">
     <div class="sr">
-      <div class="stag">About</div>
-      <h2 class="stitle">The Clinician Behind the Care</h2>
-      <p style="color:var(--muted);line-height:1.8;margin-bottom:1.25rem">Julian's path to psychiatry wasn't linear. After careers in business and solar energy — work that sharpened his eye for systems, operations, and human behavior — he made a deliberate turn toward nursing, driven by a conviction that mental health care needed deeper reform.</p>
-      <p style="color:var(--muted);line-height:1.8;margin-bottom:1.25rem">He earned his BSN cum laude from CSUN, his BA in Psychology from Vanguard University, and his Master's (PMHNP-BC) cum laude from Western University of Health Sciences in 2025. For over four years he has worked under Dr. Steven Mandel at Ketamine Clinics Los Angeles — one of the country's highest-volume IV ketamine programs — administering up to 10 infusions per day with a consistent record of patient safety.</p>
-      <blockquote>"Ketamine opens a neuroplastic window — a moment of heightened neural flexibility. My role is to help patients step through it toward lasting change."</blockquote>
-      <div class="pillars" style="margin-top:1.1rem">
-        <span class="pillar">Mental</span><span class="pillar">Spiritual</span>
-        <span class="pillar">Emotional</span><span class="pillar">Physical</span>
-        <span class="pillar">Social</span>
+      <div class="stag">Clinical Experience</div>
+      <h2 class="stitle">Specialized Expertise</h2>
+      <p class="ssub">4+ years IV ketamine administration under Dr. Steven Mandel · 2 years TMS motor threshold mapping · Consistent
+  patient safety record across 1,000s of patients.</p>
+    </div>
+    <div class="egrid">
+      <div class="ecard featured sr">
+        <div class="efeatured-badge">Primary Specialty</div>
+        <!-- FIX: aria-hidden on all decorative SVGs -->
+        <div class="eico"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#a8d8da" stroke-width="2" 
+  stroke-linecap="round"><path d="M12 2a7 7 0 0 1 7 7c0 4-3 6-4 9H9c-1-3-4-5-4-9a7 7 0 0 1 7-7z"/><line x1="9" y1="21" x2="15" 
+  y2="21"/><line x1="10" y1="17" x2="14" y2="17"/></svg></div>
+        <h3>IV Ketamine Infusion Therapy</h3>
+        <ul>
+          <li>4+ years, up to 10 patients/day, 4 days/week</li>
+          <li>Trained under Dr. Steven Mandel, KCLA</li>
+          <li>Real-time vital-sign monitoring before, during &amp; after infusion</li>
+          <li>IV insertion, dosing, titration &amp; safety protocols</li>
+          <li>Breathing &amp; music therapy integration</li>
+          <li>Treatment-resistant depression, PTSD, anxiety</li>
+        </ul>
       </div>
+      <div class="ecard sr sr-delay-1">
+        <div class="eico"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#a8d8da" stroke-width="2" 
+  stroke-linecap="round"><circle cx="12" cy="12" r="3"/><path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19
+  12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83"/></svg></div>
+        <h3>TMS — Transcranial Magnetic Stimulation</h3>
+        <ul>
+          <li>MagVenture certified — motor threshold mapping</li>
+          <li>Amplitude optimization &amp; treatment planning</li>
+          <li>2 years hands-on clinical experience</li>
+          <li>Collaboration with psychiatrists on protocols</li>
+          <li>Treatment-resistant depression &amp; anxiety</li>
+        </ul>
+      </div>
+      <div class="ecard sr sr-delay-2">
+        <div class="eico"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#a8d8da" stroke-width="2" 
+  stroke-linecap="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0
+  0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
+        <h3>PMHNP — Psychiatric Care</h3>
+        <ul>
+          <li>675 clinical hours — psychiatric assessment &amp; Dx</li>
+          <li>Psychopharmacologic management</li>
+          <li>Trauma-informed &amp; mind-body approaches</li>
+          <li>Mood disorders, anxiety, PTSD, bipolar</li>
+          <li>Outpatient &amp; telepsychiatry settings</li>
+        </ul>
+      </div>
+      <div class="ecard sr sr-delay-3">
+        <div class="eico"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#a8d8da" stroke-width="2" 
+  stroke-linecap="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg></div>
+        <h3>Patient-Centered Integration</h3>
+        <ul>
+          <li>12-week structured integration programming</li>
+          <li>Behavioral accountability frameworks</li>
+          <li>Five-dimension transformation model</li>
+          <li>Conversational Spanish — developing fluency</li>
+          <li>Diverse patient populations, LA metro</li>
+        </ul>
+      </div>
+    </div>
+  </section>
 
-      <div class="certs-list" style="margin-top:1.75rem">
-        <div style="font-size:.72rem;text-transform:uppercase;letter-spacing:.1em;color:var(--accent);font-weight:600;margin-bottom:.75rem">Licenses & Certifications</div>
-        <div class="cert-item"><div class="cert-dot"></div>PMHNP-BC — ANCC, Active (2025)</div>
-        <div class="cert-item"><div class="cert-dot"></div>California NP License & Furnishing Number — Active</div>
-        <div class="cert-item"><div class="cert-dot"></div>DEA Registration — Schedules II–V, Active (MM0208923)</div>
-        <div class="cert-item"><div class="cert-dot"></div>TMS Certification, MagVenture — 2023</div>
-        <div class="cert-item"><div class="cert-dot"></div>BLS · ACLS — Current</div>
-        <div class="cert-item"><div class="cert-dot"></div>Registered Nurse License — Active</div>
-      </div>
-    </div>
-
-    <div class="sr sr-delay-1">
-      <div style="margin-bottom:1.75rem">
-        <div style="font-size:.72rem;text-transform:uppercase;letter-spacing:.1em;color:var(--accent);font-weight:600;margin-bottom:.85rem">Core Competencies</div>
-        <div class="comp-grid">
-          <span class="comp">IV Ketamine Therapy</span>
-          <span class="comp">TMS Mapping & Optimization</span>
-          <span class="comp">Psychiatric Assessment</span>
-          <span class="comp">Medication Management</span>
-          <span class="comp">Trauma-Informed Care</span>
-          <span class="comp">Mind-Body Integration</span>
-          <span class="comp">Interventional Psychiatry</span>
-          <span class="comp">Collaborative Treatment Planning</span>
-          <span class="comp">Patient Safety & Monitoring</span>
-          <span class="comp">EMR Documentation</span>
-          <span class="comp">Conversational Spanish (developing)</span>
-          <span class="comp">Clinical Leadership</span>
-        </div>
-      </div>
-
-      <canvas id="neuralCanvas" style="width:100%;height:240px;border-radius:16px;display:block"></canvas>
-    </div>
-  </div>
-</section>
-
-<!-- EXPERTISE -->
-<section id="expertise">
-  <div class="sr">
-    <div class="stag">Clinical Experience</div>
-    <h2 class="stitle">Specialized Expertise</h2>
-    <p class="ssub">4+ years IV ketamine administration under Dr. Steven Mandel · 2 years TMS motor threshold mapping · Consistent patient safety record across 1,000s of patients.</p>
-  </div>
-  <div class="egrid">
-    <div class="ecard featured sr">
-      <div class="efeatured-badge">Primary Specialty</div>
-      <div class="eico"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#a8d8da" stroke-width="2" stroke-linecap="round"><path d="M12 2a7 7 0 0 1 7 7c0 4-3 6-4 9H9c-1-3-4-5-4-9a7 7 0 0 1 7-7z"/><line x1="9" y1="21" x2="15" y2="21"/><line x1="10" y1="17" x2="14" y2="17"/></svg></div>
-      <h3>IV Ketamine Infusion Therapy</h3>
-      <ul>
-        <li>4+ years, up to 10 patients/day, 4 days/week</li>
-        <li>Trained under Dr. Steven Mandel, KCLA</li>
-        <li>Real-time vital-sign monitoring before, during & after infusion</li>
-        <li>IV insertion, dosing, titration & safety protocols</li>
-        <li>Breathing & music therapy integration</li>
-        <li>Treatment-resistant depression, PTSD, anxiety</li>
-      </ul>
-    </div>
-    <div class="ecard sr sr-delay-1">
-      <div class="eico"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#a8d8da" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="3"/><path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83"/></svg></div>
-      <h3>TMS — Transcranial Magnetic Stimulation</h3>
-      <ul>
-        <li>MagVenture certified — motor threshold mapping</li>
-        <li>Amplitude optimization & treatment planning</li>
-        <li>2 years hands-on clinical experience</li>
-        <li>Collaboration with psychiatrists on protocols</li>
-        <li>Treatment-resistant depression & anxiety</li>
-      </ul>
-    </div>
-    <div class="ecard sr sr-delay-2">
-      <div class="eico"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#a8d8da" stroke-width="2" stroke-linecap="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
-      <h3>PMHNP — Psychiatric Care</h3>
-      <ul>
-        <li>675 clinical hours — psychiatric assessment & Dx</li>
-        <li>Psychopharmacologic management</li>
-        <li>Trauma-informed & mind-body approaches</li>
-        <li>Mood disorders, anxiety, PTSD, bipolar</li>
-        <li>Outpatient & telepsychiatry settings</li>
-      </ul>
-    </div>
-    <div class="ecard sr sr-delay-3">
-      <div class="eico"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#a8d8da" stroke-width="2" stroke-linecap="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg></div>
-      <h3>Patient-Centered Integration</h3>
-      <ul>
-        <li>12-week structured integration programming</li>
-        <li>Behavioral accountability frameworks</li>
-        <li>Five-dimension transformation model</li>
-        <li>Conversational Spanish — developing fluency</li>
-        <li>Diverse patient populations, LA metro</li>
-      </ul>
-    </div>
-  </div>
-</section>
-
-<!-- PROJECTS -->
-<section id="projects">
-  <div class="sr">
-    <div class="stag">Clinical Innovation</div>
-    <h2 class="stitle">Tools I'm Building to Support Better Care</h2>
-    <p class="ssub">Three projects in active development — designed to attract the right patients, keep them engaged through treatment, and support their transformation long after the infusion ends.</p>
-  </div>
-  <div id="projectGrid">
-    <div class="pblock sr" data-idx="0">
-      <div class="pblock-closed">
-        <div class="pblock-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="1.8" stroke-linecap="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
-        <span class="pst pst-p">In Production</span>
-        <h3 class="pblock-title">Patient Pre-Screening Funnel</h3>
-        <p class="pblock-hint">Self-assessment tool for ketamine candidates</p>
-        <div class="pblock-arrow">↓</div>
-      </div>
-      <div class="pblock-open">
-        <h3 class="pblock-title">Patient Self-Assessment & Pre-Screening</h3>
-        <p>Guides prospective patients through symptom history and treatment background. Clinical logic auto-flags appropriateness, reducing screening call time and improving patient selection quality.</p>
-        <div class="pgoal">Goal: Attract the right patients · Reduce no-shows & attrition</div>
-      </div>
-    </div>
-    <div class="pblock sr sr-delay-1" data-idx="1">
-      <div class="pblock-closed">
-        <div class="pblock-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="1.8" stroke-linecap="round"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg></div>
-        <span class="pst pst-p">In Production</span>
-        <h3 class="pblock-title">12-Week Integration App</h3>
-        <p class="pblock-hint">Post-infusion behavioral change platform</p>
-        <div class="pblock-arrow">↓</div>
-      </div>
-      <div class="pblock-open">
-        <h3 class="pblock-title">12-Week Integration Program + Web App</h3>
-        <p>Structured post-infusion program with journaling, progress tracking, and an AI-guided companion — designed to capture the neuroplastic window and anchor lasting change across five dimensions of transformation.</p>
-        <div class="pgoal">Goal: Retain patients through treatment · Drive lasting outcomes</div>
-      </div>
-    </div>
-    <div class="pblock sr sr-delay-2" data-idx="2">
-      <div class="pblock-closed">
-        <div class="pblock-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="1.8" stroke-linecap="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg></div>
-        <span class="pst pst-e">Early Production</span>
-        <h3 class="pblock-title">Patient History & Pre-Visit Intelligence</h3>
-        <p class="pblock-hint">Local AI that knows every patient before you walk in</p>
-        <div class="pblock-arrow">↓</div>
-      </div>
-      <div class="pblock-open">
-        <h3 class="pblock-title">Patient History & Pre-Visit Intelligence</h3>
-        <p>A locally hosted system on Mac mini that compiles patient records, session notes, and conversation histories into structured, evolving patient files — organized by a local LLM (Ollama/Mistral). Before each visit, it surfaces a concise summary of the patient's history, progress, and prior interventions. No cloud. No data leaving the device. Just the right context, ready when you need it.</p>
-        <div class="pgoal">Goal: Support every visit with full context · Improve clinical decisions</div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- RECOMMENDATIONS -->
-<section id="recommendations">
-  <div class="sr" style="text-align:center">
-    <div class="stag" style="text-align:center">From Colleagues & Leadership</div>
-    <h2 class="stitle" style="text-align:center">What Those Who Know the Work Say</h2>
-    <p class="ssub" style="text-align:center;margin:0 auto 2.5rem">Letters of recommendation and quotes from clinical leadership and teammates at Ketamine Clinics Los Angeles.</p>
-  </div>
-  <div class="rec-carousel sr">
-    <div class="rec-track" id="recTrack"></div>
-    <div class="rec-ctrl">
-      <button class="rec-btn" onclick="recMove(-1)">←</button>
-      <div class="rec-dots" id="recDots"></div>
-      <button class="rec-btn" onclick="recMove(1)">→</button>
-    </div>
-  </div>
-</section>
-
-<!-- MODAL -->
-<div class="rec-modal-bg" id="recModalBg" onclick="closeRecModal(event)">
-  <div class="rec-modal" id="recModal">
-    <button class="rec-modal-close" onclick="closeRecModal()">✕</button>
-    <div class="rec-modal-header">
-      <img id="modalAvatar" class="rec-modal-avatar" src="" alt=""/>
-      <div>
-        <div class="rec-modal-name" id="modalName"></div>
-        <div class="rec-modal-meta" id="modalMeta"></div>
-        <div class="rec-modal-org" id="modalOrg"></div>
-      </div>
-    </div>
-    <div class="rec-modal-body" id="modalBody"></div>
-  </div>
-</div>
-
-<!-- TESTIMONIALS -->
-<section id="testimonials">
-  <div class="sr">
-    <div class="stag">Patient Voices</div>
-    <h2 class="stitle">What Patients Are Saying</h2>
-    <div class="fquote">
-      "RN Julian is amazing if you get the chance to be with him."
-      <cite>— Beau Brighton, Google Review · Ketamine Clinics Los Angeles</cite>
-    </div>
-    <div class="tcfilter">
-      <button class="tcfbtn active" onclick="setFilter('all',this)">All reviews</button>
-      <button class="tcfbtn" onclick="setFilter('yelp',this)">★ Yelp</button>
-      <button class="tcfbtn" onclick="setFilter('google',this)">★ Google</button>
-    </div>
-  </div>
-  <div class="tcwrap">
-    <div class="tctrack" id="tcTrack"></div>
-    <div class="tcctrl">
-      <button class="tcbtn" onclick="tcMove(-1)">←</button>
-      <div class="tcdots" id="tcDots"></div>
-      <button class="tcbtn" onclick="tcMove(1)">→</button>
-    </div>
-  </div>
-  <p style="text-align:center;margin-top:1.5rem;font-size:.76rem;color:var(--muted)">All 5-star ratings · Ketamine Clinics Los Angeles · Yelp & Google</p>
-</section>
-
-<!-- CONTACT -->
-<section id="contact">
-  <div class="cgrid">
+  <!-- PROJECTS -->
+  <section id="projects">
     <div class="sr">
-      <div class="stag">Let's Connect</div>
-      <h2 class="stitle">Open to Clinical Partnerships & Opportunities</h2>
-      <p style="color:var(--muted);line-height:1.8;margin-bottom:1.4rem">If you're building a team around interventional psychiatry — ketamine, TMS, or psychedelic-assisted care — I'd genuinely love to connect. I bring procedural depth, a strong safety record, and the drive to help build programs that create lasting change.</p>
-      <div class="avail-pills">
-        <span class="avail active">✓ Full-time</span>
-        <span class="avail active">✓ Part-time</span>
-        <span class="avail active">✓ 1099 / Contract</span>
-      </div>
-      <div style="display:flex;align-items:center;gap:.5rem;color:var(--muted);font-size:.86rem;margin-bottom:1.5rem">
-        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-        Los Angeles, CA · Conversational Spanish (developing fluency)
-      </div>
-      <a id="resumeBtn" href="https://drive.google.com/uc?export=download&id=12vixdaiGKnifDTzw1PssRX9hYmhO818Z" target="_blank" class="dl-btn">>
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-        Download Resume / CV
-      </a>
+      <div class="stag">Clinical Innovation</div>
+      <h2 class="stitle">Tools I'm Building to Support Better Care</h2>
+      <p class="ssub">Three projects in active development — designed to attract the right patients, keep them engaged through treatment,
+  and support their transformation long after the infusion ends.</p>
     </div>
+    <div id="projectGrid">
+      <!-- FIX: role="button" + tabindex="0" on all pblocks for keyboard access -->
+      <div class="pblock sr" data-idx="0" role="button" tabindex="0" aria-expanded="false">
+        <div class="pblock-closed">
+          <div class="pblock-icon"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" 
+  stroke-width="1.8" stroke-linecap="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23
+  21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
+          <span class="pst pst-p">In Production</span>
+          <h3 class="pblock-title">Patient Pre-Screening Funnel</h3>
+          <p class="pblock-hint">Self-assessment tool for ketamine candidates</p>
+          <div class="pblock-arrow" aria-hidden="true">↓</div>
+        </div>
+        <div class="pblock-open">
+          <h3 class="pblock-title">Patient Self-Assessment &amp; Pre-Screening</h3>
+          <p>Guides prospective patients through symptom history and treatment background. Clinical logic auto-flags appropriateness,
+  reducing screening call time and improving patient selection quality.</p>
+          <div class="pgoal">Goal: Attract the right patients · Reduce no-shows &amp; attrition</div>
+        </div>
+      </div>
+      <div class="pblock sr sr-delay-1" data-idx="1" role="button" tabindex="0" aria-expanded="false">
+        <div class="pblock-closed">
+          <div class="pblock-icon"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" 
+  stroke-width="1.8" stroke-linecap="round"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg></div>
+          <span class="pst pst-p">In Production</span>
+          <h3 class="pblock-title">12-Week Integration App</h3>
+          <p class="pblock-hint">Post-infusion behavioral change platform</p>
+          <div class="pblock-arrow" aria-hidden="true">↓</div>
+        </div>
+        <div class="pblock-open">
+          <h3 class="pblock-title">12-Week Integration Program + Web App</h3>
+          <p>Structured post-infusion program with journaling, progress tracking, and an AI-guided companion — designed to capture the
+  neuroplastic window and anchor lasting change across five dimensions of transformation.</p>
+          <div class="pgoal">Goal: Retain patients through treatment · Drive lasting outcomes</div>
+        </div>
+      </div>
+      <div class="pblock sr sr-delay-2" data-idx="2" role="button" tabindex="0" aria-expanded="false">
+        <div class="pblock-closed">
+          <div class="pblock-icon"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" 
+  stroke-width="1.8" stroke-linecap="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14
+   8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg></div>
+          <span class="pst pst-e">Early Production</span>
+          <h3 class="pblock-title">Patient History &amp; Pre-Visit Intelligence</h3>
+          <p class="pblock-hint">Local AI that knows every patient before you walk in</p>
+          <div class="pblock-arrow" aria-hidden="true">↓</div>
+        </div>
+        <div class="pblock-open">
+          <h3 class="pblock-title">Patient History &amp; Pre-Visit Intelligence</h3>
+          <p>A locally hosted system on Mac mini that compiles patient records, session notes, and conversation histories into structured,
+  evolving patient files — organized by a local LLM (Ollama/Mistral). Before each visit, it surfaces a concise summary of the patient's
+  history, progress, and prior interventions. No cloud. No data leaving the device. Just the right context, ready when you need it.</p>
+          <div class="pgoal">Goal: Support every visit with full context · Improve clinical decisions</div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <div class="sr sr-delay-1">
-      <div class="cinfo-card">
-        <div class="cinfo-row">
-          <div class="cinfo-label">Phone</div>
-          <a href="tel:+15623045825" class="cinfo-link">
-            <div class="cico"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.27h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.91a16 16 0 0 0 6 6l.91-.91a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg></div>
-            (562) 304-5825
-          </a>
+  <!-- RECOMMENDATIONS -->
+  <section id="recommendations">
+    <div class="sr" style="text-align:center">
+      <div class="stag" style="text-align:center">From Colleagues &amp; Leadership</div>
+      <h2 class="stitle" style="text-align:center">What Those Who Know the Work Say</h2>
+      <p class="ssub" style="text-align:center;margin:0 auto 2.5rem">Letters of recommendation and quotes from clinical leadership and
+  teammates at Ketamine Clinics Los Angeles.</p>
+    </div>
+    <div class="rec-carousel sr" aria-label="Recommendations carousel" aria-roledescription="carousel">
+      <div class="rec-track" id="recTrack" aria-live="polite"></div>
+      <div class="rec-ctrl">
+        <!-- FIX: aria-labels on carousel navigation buttons -->
+        <button class="rec-btn" id="recPrev" aria-label="Previous recommendation">←</button>
+        <div class="rec-dots" id="recDots" role="tablist" aria-label="Recommendation slides"></div>
+        <button class="rec-btn" id="recNext" aria-label="Next recommendation">→</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- MODAL -->
+  <!-- FIX: role="dialog", aria-modal, aria-labelledby -->
+  <div class="rec-modal-bg" id="recModalBg">
+    <div class="rec-modal" id="recModal" role="dialog" aria-modal="true" aria-labelledby="modalName">
+      <button class="rec-modal-close" id="modalClose" aria-label="Close modal">✕</button>
+      <div class="rec-modal-header">
+        <img id="modalAvatar" class="rec-modal-avatar" src="" alt=""/>
+        <div>
+          <div class="rec-modal-name" id="modalName"></div>
+          <div class="rec-modal-meta" id="modalMeta"></div>
+          <div class="rec-modal-org" id="modalOrg"></div>
         </div>
-        <div class="cinfo-row">
-          <div class="cinfo-label">Email</div>
-          <a href="mailto:jmacias2002@gmail.com" class="cinfo-link">
-            <div class="cico"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg></div>
-            jmacias2002@gmail.com
-          </a>
+      </div>
+      <div class="rec-modal-body" id="modalBody"></div>
+    </div>
+  </div>
+
+  <!-- TESTIMONIALS -->
+  <section id="testimonials">
+    <div class="sr">
+      <div class="stag">Patient Voices</div>
+      <h2 class="stitle">What Patients Are Saying</h2>
+      <div class="fquote">
+        "RN Julian is amazing if you get the chance to be with him."
+        <cite>— Beau Brighton, Google Review · Ketamine Clinics Los Angeles</cite>
+      </div>
+      <div class="tcfilter" role="group" aria-label="Filter reviews by source">
+        <!-- FIX: aria-pressed on filter buttons -->
+        <button class="tcfbtn active" data-filter="all" aria-pressed="true">All reviews</button>
+        <button class="tcfbtn" data-filter="yelp" aria-pressed="false">★ Yelp</button>
+        <button class="tcfbtn" data-filter="google" aria-pressed="false">★ Google</button>
+      </div>
+    </div>
+    <div class="tcwrap">
+      <div class="tctrack" id="tcTrack" aria-live="polite"></div>
+      <div class="tcctrl">
+        <!-- FIX: aria-labels on testimonial carousel buttons -->
+        <button class="tcbtn" id="tcPrev" aria-label="Previous review">←</button>
+        <div class="tcdots" id="tcDots" role="tablist" aria-label="Review slides"></div>
+        <button class="tcbtn" id="tcNext" aria-label="Next review">→</button>
+      </div>
+    </div>
+    <p style="text-align:center;margin-top:1.5rem;font-size:.76rem;color:var(--muted)">All 5-star ratings · Ketamine Clinics Los Angeles ·
+  Yelp &amp; Google</p>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="cgrid">
+      <div class="sr">
+        <div class="stag">Let's Connect</div>
+        <h2 class="stitle">Open to Clinical Partnerships &amp; Opportunities</h2>
+        <p style="color:var(--muted);line-height:1.8;margin-bottom:1.4rem">If you're building a team around interventional psychiatry —
+  ketamine, TMS, or psychedelic-assisted care — I'd genuinely love to connect. I bring procedural depth, a strong safety record, and the
+  drive to help build programs that create lasting change.</p>
+        <div class="avail-pills">
+          <span class="avail active">✓ Full-time</span>
+          <span class="avail active">✓ Part-time</span>
+          <span class="avail active">✓ 1099 / Contract</span>
         </div>
-        <div class="cinfo-row">
-          <div class="cinfo-label">LinkedIn</div>
-          <a href="https://www.linkedin.com/in/julianamacias/" target="_blank" class="cinfo-link">
-            <div class="cico"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></div>
-            linkedin.com/in/julianamacias
-          </a>
+        <div style="display:flex;align-items:center;gap:.5rem;color:var(--muted);font-size:.86rem;margin-bottom:1.5rem">
+          <svg aria-hidden="true" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2"><path 
+  d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          Los Angeles, CA · Conversational Spanish (developing fluency)
         </div>
-        <div class="cinfo-row">
-          <div class="cinfo-label">Location</div>
-          <div class="cinfo-link" style="cursor:default">
-            <div class="cico"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
-            Los Angeles, CA
+        <!-- FIX: removed stray > character, added rel="noopener noreferrer" -->
+        <a id="resumeBtn" href="https://drive.google.com/uc?export=download&id=12vixdaiGKnifDTzw1PssRX9hYmhO818Z" target="_blank" 
+  rel="noopener noreferrer" class="dl-btn">
+          <svg aria-hidden="true" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path 
+  d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          Download Resume / CV
+        </a>
+      </div>
+
+      <div class="sr sr-delay-1">
+        <div class="cinfo-card">
+          <div class="cinfo-row">
+            <div class="cinfo-label">Phone</div>
+            <a href="tel:+15623045825" class="cinfo-link">
+              <div class="cico"><svg aria-hidden="true" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" 
+  stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2
+  2 0 0 1 3.6 1.27h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.91a16 16 0 0 0 6 6l.91-.91a2 2 0 0 1
+  2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg></div>
+              (562) 304-5825
+            </a>
+          </div>
+          <div class="cinfo-row">
+            <div class="cinfo-label">Email</div>
+            <a href="mailto:jmacias2002@gmail.com" class="cinfo-link">
+              <div class="cico"><svg aria-hidden="true" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" 
+  stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg></div>
+              jmacias2002@gmail.com
+            </a>
+          </div>
+          <div class="cinfo-row">
+            <div class="cinfo-label">LinkedIn</div>
+            <!-- FIX: rel="noopener noreferrer" on external link -->
+            <a href="https://www.linkedin.com/in/julianamacias/" target="_blank" rel="noopener noreferrer" class="cinfo-link">
+              <div class="cico"><svg aria-hidden="true" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" 
+  stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" 
+  height="12"/><circle cx="4" cy="4" r="2"/></svg></div>
+              linkedin.com/in/julianamacias
+            </a>
+          </div>
+          <div class="cinfo-row">
+            <div class="cinfo-label">Location</div>
+            <div class="cinfo-link" style="cursor:default">
+              <div class="cico"><svg aria-hidden="true" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" 
+  stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+              Los Angeles, CA
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<footer>
-  <p>© 2025 <span>Julian Macias, PMHNP-BC</span> · Interventional Psychiatry · Los Angeles, CA</p>
-  <p style="margin-top:.4rem;font-size:.74rem">Built with intention. Designed for transformation.</p>
-</footer>
+  </main><!-- end <main> -->
 
-<script>
-// NAV
-function toggleMenu(){document.getElementById('mmenu').classList.toggle('open')}
+  <footer>
+    <p>© 2025 <span>Julian Macias, PMHNP-BC</span> · Interventional Psychiatry · Los Angeles, CA</p>
+    <p style="margin-top:.4rem;font-size:.74rem">Built with intention. Designed for transformation.</p>
+  </footer>
 
-// SCROLL REVEAL
-const sro=new IntersectionObserver(e=>{e.forEach(x=>{if(x.isIntersecting)x.target.classList.add('in')})},{threshold:.08});
-document.querySelectorAll('.sr').forEach(el=>sro.observe(el));
-
-// HERO WORD REVEAL
-(function(){
-  const words=['Where','evidence','meets','human','connection.'];
-  const ai=[2,3,4];
-  const el=document.getElementById('heroTitle');
-  el.innerHTML=words.map((w,i)=>`<span class="word${ai.includes(i)?' accent-word':''}" style="margin-right:.28em">${w}</span>`).join('');
-  el.querySelectorAll('.word').forEach((s,i)=>setTimeout(()=>s.classList.add('show'),300+i*120));
-})();
-
-// STAT COUNTERS
-(function(){
-  function go(){
-    document.querySelectorAll('[data-target]').forEach(el=>{
-      const t=parseInt(el.dataset.target),suf=el.dataset.suffix||'';
-      if(t===0){el.textContent='0'+suf;return;}
-      const inc=el.dataset.inc?parseInt(el.dataset.inc):1;
-      let c=0;const iv=setInterval(()=>{
-        c=Math.min(c+inc,t);
-        el.textContent=c+suf;
-        if(c>=t)clearInterval(iv);
-      },40);
-    });
+  <script>
+  // NAV — hamburger (now a <button>, manages aria-expanded)
+  const hamBtn = document.getElementById('hamBtn');
+  const mmenu = document.getElementById('mmenu');
+  function toggleMenu() {
+    const isOpen = mmenu.classList.toggle('open');
+    hamBtn.setAttribute('aria-expanded', isOpen);
+    hamBtn.setAttribute('aria-label', isOpen ? 'Close menu' : 'Open menu');
   }
-  const ho=new IntersectionObserver(e=>{if(e[0].isIntersecting){go();ho.disconnect();}},{threshold:.3});
-  ho.observe(document.getElementById('hero'));
-})();
+  hamBtn.addEventListener('click', toggleMenu);
 
-// AURORA DEEP SPACE
-(function(){
-  const c=document.getElementById('auroraCanvas');
-  function resize(){c.width=c.offsetWidth;c.height=c.offsetHeight;}
-  window.addEventListener('resize',()=>{resize();gl.viewport(0,0,c.width,c.height);});resize();
-  const gl=c.getContext('webgl');if(!gl)return;
-  gl.viewport(0,0,c.width,c.height);
-  const vs=`attribute vec2 p;void main(){gl_Position=vec4(p,0.,1.);}`;
-  const fs=`precision highp float;uniform float t;uniform vec2 res;uniform vec2 mouse;
-    float hash(vec2 p){return fract(sin(dot(p,vec2(127.1,311.7)))*43758.5453);}
-    float noise(vec2 p){vec2 i=floor(p),f=fract(p);f=f*f*(3.-2.*f);
-      float a=hash(i),b=hash(i+vec2(1,0)),cc=hash(i+vec2(0,1)),d=hash(i+vec2(1,1));
-      return mix(mix(a,b,f.x),mix(cc,d,f.x),f.y);}
-    float fbm(vec2 p){float v=0.,a=.5;for(int i=0;i<6;i++){v+=a*noise(p);p*=2.1;a*=.5;}return v;}
-    void main(){
-      vec2 uv=gl_FragCoord.xy/res;vec2 m=mouse/res;
-      float sl=t*.12,sp=t*.22;
-      float b1=uv.y+fbm(vec2(uv.x*1.8+sl*.7,sl*.4))*.45-.2;
-      float b2=uv.y+fbm(vec2(uv.x*2.2-sl*.5,sl*.6+1.3))*.4-.35;
-      float b3=uv.y+fbm(vec2(uv.x*1.5+sl*.3,sl*.8+2.7))*.5-.55;
-      float b4=uv.y+fbm(vec2(uv.x*2.8-sl*.6,sl*.35+4.1))*.35-.7;
-      float a1=exp(-b1*b1*18.)*1.1,a2=exp(-b2*b2*22.)*.9;
-      float a3=exp(-b3*b3*16.)*1.,a4=exp(-b4*b4*28.)*.75;
-      float md=length(uv-m),mp=exp(-md*md*4.)*.2;
-      a1+=mp*exp(-(b1+mp)*(b1+mp)*18.);a2+=mp*.7*exp(-(b2+mp*.5)*(b2+mp*.5)*22.);
-      float sh=fbm(vec2(uv.x*8.+sp*3.,uv.y*6.-sp*2.))*.3+.7;
-      float sh2=fbm(vec2(uv.x*12.-sp*4.,uv.y*9.+sp*1.5))*.25+.75;
-      vec3 c1=vec3(.2,.5,.9)*sh,c2=vec3(.1,.7,.7)*sh2,c3=vec3(.4,.3,.9)*sh,c4=vec3(.15,.6,.55)*sh2;
-      vec3 bg=vec3(.02,.03,.08);
-      vec3 col=bg+c1*a1+c2*a2+c3*a3+c4*a4;
-      float star=pow(hash(floor(uv*400.)),.998*300.);
-      col+=vec3(star*.4)*(.3+fbm(vec2(t*.05,uv.x*10.))*.7);
-      vec2 vig=uv-.5;col*=1.-dot(vig,vig)*1.2;
-      col=col/(col+.55);col=pow(col,vec3(.85));
-      gl_FragColor=vec4(col,1.);}`;
-  function mkS(t2,src){const s=gl.createShader(t2);gl.shaderSource(s,src);gl.compileShader(s);return s;}
-  const prog=gl.createProgram();
-  gl.attachShader(prog,mkS(gl.VERTEX_SHADER,vs));gl.attachShader(prog,mkS(gl.FRAGMENT_SHADER,fs));
-  gl.linkProgram(prog);gl.useProgram(prog);
-  const buf=gl.createBuffer();gl.bindBuffer(gl.ARRAY_BUFFER,buf);
-  gl.bufferData(gl.ARRAY_BUFFER,new Float32Array([-1,-1,1,-1,-1,1,1,1]),gl.STATIC_DRAW);
-  const pL=gl.getAttribLocation(prog,'p');gl.enableVertexAttribArray(pL);gl.vertexAttribPointer(pL,2,gl.FLOAT,false,0,0);
-  const tL=gl.getUniformLocation(prog,'t'),rL=gl.getUniformLocation(prog,'res'),mL=gl.getUniformLocation(prog,'mouse');
-  const mouse={x:0,y:0};
-  window.addEventListener('mousemove',e=>{const r=c.getBoundingClientRect();mouse.x=e.clientX-r.left;mouse.y=c.height-(e.clientY-r.top);});
-  const st=Date.now();
-  (function loop(){requestAnimationFrame(loop);const t2=(Date.now()-st)/1000;
-    gl.uniform1f(tL,t2);gl.uniform2f(rL,c.width,c.height);gl.uniform2f(mL,mouse.x,mouse.y);
-    gl.drawArrays(gl.TRIANGLE_STRIP,0,4);})();
-})();
+  // Close mobile menu when a link is clicked
+  mmenu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+    mmenu.classList.remove('open');
+    hamBtn.setAttribute('aria-expanded', 'false');
+    hamBtn.setAttribute('aria-label', 'Open menu');
+  }));
 
-// THREE.JS NEURAL PARTICLES
-(function(){
-  const scr=document.createElement('script');
-  scr.src='https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js';
-  scr.onload=function(){
-    const canvas=document.getElementById('heroCanvas');
-    const W=canvas.offsetWidth,H=canvas.offsetHeight;
-    const renderer=new THREE.WebGLRenderer({canvas,alpha:true,antialias:true});
-    renderer.setPixelRatio(Math.min(window.devicePixelRatio,2));
-    renderer.setSize(W,H);renderer.setClearColor(0x000000,0);
-    const scene=new THREE.Scene();scene.fog=new THREE.FogExp2(0x000000,0.04);
-    const camera=new THREE.PerspectiveCamera(60,W/H,.1,100);camera.position.set(0,0,18);
-    const N=160,spread=14,velocities=[],ptMeshes=[];
-    const ptGeo=new THREE.SphereGeometry(.1,8,8);
-    for(let i=0;i<N;i++){
-      const mat=new THREE.MeshBasicMaterial({color:new THREE.Color().setHSL(.52+Math.random()*.08,.7,.65+Math.random()*.2),transparent:true,opacity:.6+Math.random()*.35});
-      const m=new THREE.Mesh(ptGeo,mat);
-      m.position.set((Math.random()-.5)*spread*2,(Math.random()-.5)*spread,(Math.random()-.5)*spread*1.2);
-      const s=.5+Math.random()*.9;m.scale.setScalar(s);scene.add(m);ptMeshes.push(m);
-      velocities.push((Math.random()-.5)*.01,(Math.random()-.5)*.01,(Math.random()-.5)*.007);
-      const halo=new THREE.Mesh(new THREE.SphereGeometry(.25,8,8),new THREE.MeshBasicMaterial({color:0x30e8e0,transparent:true,opacity:.08,side:THREE.BackSide}));
-      m.add(halo);
-    }
-    const maxE=500,eGeo=new THREE.BufferGeometry();
-    const ePos=new Float32Array(maxE*6),eCol=new Float32Array(maxE*6);
-    eGeo.setAttribute('position',new THREE.BufferAttribute(ePos,3));
-    eGeo.setAttribute('color',new THREE.BufferAttribute(eCol,3));
-    scene.add(new THREE.LineSegments(eGeo,new THREE.LineBasicMaterial({vertexColors:true,transparent:true,opacity:.45})));
-    const mouse={nx:0,ny:0};const ripples=[];let tRX=0,tRY=0,rX=0,rY=0;
-    const mv3=new THREE.Vector3();
-    window.addEventListener('mousemove',e=>{mouse.nx=e.clientX/window.innerWidth*2-1;mouse.ny=-(e.clientY/window.innerHeight)*2+1;tRY=mouse.nx*.3;tRX=mouse.ny*.18;});
-    window.addEventListener('click',e=>{const cx=e.clientX/window.innerWidth*2-1,cy=-(e.clientY/window.innerHeight)*2+1;const v=new THREE.Vector3(cx,cy,.5).unproject(camera);ripples.push({x:v.x,y:v.y,t:0});});
-    window.addEventListener('resize',()=>{const W2=canvas.offsetWidth,H2=canvas.offsetHeight;camera.aspect=W2/H2;camera.updateProjectionMatrix();renderer.setSize(W2,H2);});
-    const clock=new THREE.Clock();
-    function animate(){
-      requestAnimationFrame(animate);
-      const dt=clock.getDelta(),el=clock.getElapsedTime();
-      rX+=(tRX-rX)*.04;rY+=(tRY-rY)*.04;scene.rotation.x=rX;scene.rotation.y=rY;
-      mv3.set(mouse.nx,mouse.ny,.5).unproject(camera);
-      ripples.forEach(r=>r.t+=dt*1.1);
-      for(let i=ripples.length-1;i>=0;i--){if(ripples[i].t>2.8)ripples.splice(i,1);}
-      ptMeshes.forEach((m,i)=>{
-        m.position.x+=velocities[i*3];m.position.y+=velocities[i*3+1];m.position.z+=velocities[i*3+2];
-        if(Math.abs(m.position.x)>spread)velocities[i*3]*=-1;
-        if(Math.abs(m.position.y)>spread*.7)velocities[i*3+1]*=-1;
-        if(Math.abs(m.position.z)>spread*.9)velocities[i*3+2]*=-1;
-        const dx=m.position.x-mv3.x,dy=m.position.y-mv3.y,d=Math.sqrt(dx*dx+dy*dy);
-        if(d<3.2&&d>0){const f=.055*(1-d/3.2);velocities[i*3]+=dx/d*f;velocities[i*3+1]+=dy/d*f;const sp=Math.sqrt(velocities[i*3]**2+velocities[i*3+1]**2);if(sp>.055){velocities[i*3]*=.055/sp;velocities[i*3+1]*=.055/sp;}}
-        ripples.forEach(r=>{const rdx=m.position.x-r.x,rdy=m.position.y-r.y,rd=Math.sqrt(rdx*rdx+rdy*rdy),wave=Math.abs(rd-r.t*4);if(wave<1.4){const f=(1-wave/1.4)*2.8*.04;velocities[i*3]+=rdx/(rd||1)*f;velocities[i*3+1]+=rdy/(rd||1)*f;}});
-        m.scale.setScalar(.5+Math.sin(el*.9+i*.45)*.18);
-        m.material.color.setHSL(.5+Math.sin(el*.15+i*.1)*.06,.75,.65+Math.sin(el*.3+i*.2)*.1);
-      });
-      let ei=0;
-      for(let a=0;a<N&&ei<maxE;a++){for(let b=a+1;b<N&&ei<maxE;b++){
-        const pa=ptMeshes[a].position,pb=ptMeshes[b].position;
-        const dx=pa.x-pb.x,dy=pa.y-pb.y,dz=pa.z-pb.z,dist=Math.sqrt(dx*dx+dy*dy+dz*dz);
-        if(dist<5.5){const al=1-dist/5.5,base=ei*6;
-          ePos[base]=pa.x;ePos[base+1]=pa.y;ePos[base+2]=pa.z;ePos[base+3]=pb.x;ePos[base+4]=pb.y;ePos[base+5]=pb.z;
-          const r=.15+al*.5,g=.75+al*.25,cb=.75+al*.2;
-          eCol[base]=r;eCol[base+1]=g;eCol[base+2]=cb;eCol[base+3]=r;eCol[base+4]=g;eCol[base+5]=cb;ei++;}}}
-      for(let k=ei;k<maxE;k++){const b=k*6;ePos[b]=ePos[b+1]=ePos[b+2]=ePos[b+3]=ePos[b+4]=ePos[b+5]=0;}
-      eGeo.attributes.position.needsUpdate=true;eGeo.attributes.color.needsUpdate=true;eGeo.setDrawRange(0,ei*2);
-      renderer.render(scene,camera);
-    }
-    animate();
-  };
-  document.head.appendChild(scr);
-})();
-
-// NEURAL CANVAS (Philosophy)
-(function(){
-  const c=document.getElementById('neuralCanvas');if(!c)return;
-  const ctx=c.getContext('2d');
-  function resize(){c.width=c.offsetWidth;c.height=c.offsetHeight;}
-  window.addEventListener('resize',resize);resize();
-  const nodes=[];const N=18;
-  for(let i=0;i<N;i++)nodes.push({x:Math.random()*c.width,y:Math.random()*c.height,vx:(Math.random()-.5)*.4,vy:(Math.random()-.5)*.4,r:Math.random()*4+2});
-  function draw(){
-    ctx.clearRect(0,0,c.width,c.height);
-    nodes.forEach(n=>{n.x+=n.vx;n.y+=n.vy;if(n.x<0||n.x>c.width)n.vx*=-1;if(n.y<0||n.y>c.height)n.vy*=-1;});
-    for(let i=0;i<N;i++)for(let j=i+1;j<N;j++){
-      const dx=nodes[i].x-nodes[j].x,dy=nodes[i].y-nodes[j].y,d=Math.sqrt(dx*dx+dy*dy);
-      if(d<120){ctx.beginPath();ctx.moveTo(nodes[i].x,nodes[i].y);ctx.lineTo(nodes[j].x,nodes[j].y);ctx.strokeStyle=`rgba(74,138,140,${.35*(1-d/120)})`;ctx.lineWidth=.8;ctx.stroke();}}
-    nodes.forEach(n=>{ctx.beginPath();ctx.arc(n.x,n.y,n.r,0,Math.PI*2);ctx.fillStyle='#4A8A8C';ctx.globalAlpha=.7;ctx.fill();ctx.globalAlpha=1;});
-    requestAnimationFrame(draw);
-  }
-  draw();
-})();
-
-// PROJECT BLOCKS
-document.querySelectorAll('.pblock').forEach(block=>{
-  block.addEventListener('click',()=>{
-    const isOpen=block.classList.contains('expanded');
-    document.querySelectorAll('.pblock').forEach(b=>b.classList.remove('expanded'));
-    if(!isOpen)block.classList.add('expanded');
+  // Nav CTA scroll
+  document.getElementById('navCta').addEventListener('click', () => {
+    document.getElementById('contact').scrollIntoView({behavior:'smooth'});
   });
-});
 
-// RECOMMENDATIONS CAROUSEL
-const recs=[
-  {
-    name:'Sam Mandel',
-    title:'Co-Founder & CEO',
-    org:'Ketamine Clinics Los Angeles',
-    photo:'https://i.postimg.cc/Ty9Pdw0j/Sam-headshot.png',
-    initials:'SM',
-    preview:'"I recommend him without hesitation and believe he will be a meaningful asset to any organization fortunate enough to work with him."',
-    full:`It is my pleasure to recommend Julian Macias. Julian served as a full-time registered nurse at Ketamine Clinics Los Angeles for four years, where he played an important role in delivering compassionate, patient-centered care to individuals undergoing mental health treatment.
+  // SCROLL REVEAL
+  const sro = new IntersectionObserver(e => {
+    e.forEach(x => { if (x.isIntersecting) x.target.classList.add('in'); });
+  }, {threshold: .08});
+  document.querySelectorAll('.sr').forEach(el => sro.observe(el));
 
-During his time with us, Julian consistently demonstrated professionalism, reliability, and genuine care for the patients he served. Our clinic works with individuals facing depression, PTSD, anxiety, and other serious mental health challenges, including SI, and Julian approached this work with empathy, patience, and respect. Patients often form strong bonds with the nurses who guide them through treatment, and Julian always handled that responsibility with kindness and attentiveness.
+  // HERO WORD REVEAL — replaces pre-populated h1 with animated spans
+  (function() {
+    const words = ['Where','evidence','meets','human','connection.'];
+    const ai = [2,3,4];
+    const el = document.getElementById('heroTitle');
+    el.innerHTML = words.map((w,i) => `<span class="word${ai.includes(i) ? ' accent-word' : ''}"
+  style="margin-right:.28em">${w}</span>`).join('');
+    el.querySelectorAll('.word').forEach((s,i) => setTimeout(() => s.classList.add('show'), 300 + i * 120));
+  })();
 
-As a teammate, Julian is a thoughtful and steady presence on a clinical team. He works well with colleagues, communicates clearly, and maintains a calm demeanor in situations that require both clinical judgment and emotional sensitivity.
+  // STAT COUNTERS
+  (function() {
+    function go() {
+      document.querySelectorAll('[data-target]').forEach(el => {
+        const t = parseInt(el.dataset.target), suf = el.dataset.suffix || '';
+        if (t === 0) { el.textContent = '0' + suf; return; }
+        const inc = el.dataset.inc ? parseInt(el.dataset.inc) : 1;
+        let c = 0;
+        const iv = setInterval(() => {
+          c = Math.min(c + inc, t);
+          el.textContent = c + suf;
+          if (c >= t) clearInterval(iv);
+        }, 40);
+      });
+    }
+    const ho = new IntersectionObserver(e => { if (e[0].isIntersecting) { go(); ho.disconnect(); } }, {threshold: .3});
+    ho.observe(document.getElementById('hero'));
+  })();
 
-Beyond his clinical skills, Julian brings warmth and integrity to his work. Willing to come early, stay late, and jump in to help wherever needed, Julian is an asset to any team. I recommend him without hesitation.`
-  },
-  {
-    name:'Angel Jones',
-    title:'Executive Director',
-    org:'Ketamine Clinics Los Angeles',
-    photo:'https://i.postimg.cc/1fkXMb4H/Angel-Headshot.png',
-    initials:'AJ',
-    preview:'"His creativity, reliability, determination, and dedication to improving mental health care made him a true asset to our organization."',
-    full:`Over the past four years, Julian Macias has consistently demonstrated exceptional compassion for patients, thoughtful clinical judgment, and a collaborative spirit that strengthened our entire team.
+  // AURORA DEEP SPACE
+  (function() {
+    const c = document.getElementById('auroraCanvas');
+    function resize() { c.width = c.offsetWidth; c.height = c.offsetHeight; }
+    window.addEventListener('resize', () => { resize(); gl.viewport(0,0,c.width,c.height); });
+    resize();
+    const gl = c.getContext('webgl');
+    if (!gl) return;
+    gl.viewport(0,0,c.width,c.height);
+    const vs = `attribute vec2 p;void main(){gl_Position=vec4(p,0.,1.);}`;
+    const fs = `precision highp float;uniform float t;uniform vec2 res;uniform vec2 mouse;
+      float hash(vec2 p){return fract(sin(dot(p,vec2(127.1,311.7)))*43758.5453);}
+      float noise(vec2 p){vec2 i=floor(p),f=fract(p);f=f*f*(3.-2.*f);
+        float a=hash(i),b=hash(i+vec2(1,0)),cc=hash(i+vec2(0,1)),d=hash(i+vec2(1,1));
+        return mix(mix(a,b,f.x),mix(cc,d,f.x),f.y);}
+      float fbm(vec2 p){float v=0.,a=.5;for(int i=0;i<6;i++){v+=a*noise(p);p*=2.1;a*=.5;}return v;}
+      void main(){
+        vec2 uv=gl_FragCoord.xy/res;vec2 m=mouse/res;
+        float sl=t*.12,sp=t*.22;
+        float b1=uv.y+fbm(vec2(uv.x*1.8+sl*.7,sl*.4))*.45-.2;
+        float b2=uv.y+fbm(vec2(uv.x*2.2-sl*.5,sl*.6+1.3))*.4-.35;
+        float b3=uv.y+fbm(vec2(uv.x*1.5+sl*.3,sl*.8+2.7))*.5-.55;
+        float b4=uv.y+fbm(vec2(uv.x*2.8-sl*.6,sl*.35+4.1))*.35-.7;
+        float a1=exp(-b1*b1*18.)*1.1,a2=exp(-b2*b2*22.)*.9;
+        float a3=exp(-b3*b3*16.)*1.,a4=exp(-b4*b4*28.)*.75;
+        float md=length(uv-m),mp=exp(-md*md*4.)*.2;
+        a1+=mp*exp(-(b1+mp)*(b1+mp)*18.);a2+=mp*.7*exp(-(b2+mp*.5)*(b2+mp*.5)*22.);
+        float sh=fbm(vec2(uv.x*8.+sp*3.,uv.y*6.-sp*2.))*.3+.7;
+        float sh2=fbm(vec2(uv.x*12.-sp*4.,uv.y*9.+sp*1.5))*.25+.75;
+        vec3 c1=vec3(.2,.5,.9)*sh,c2=vec3(.1,.7,.7)*sh2,c3=vec3(.4,.3,.9)*sh,c4=vec3(.15,.6,.55)*sh2;
+        vec3 bg=vec3(.02,.03,.08);
+        vec3 col=bg+c1*a1+c2*a2+c3*a3+c4*a4;
+        float star=pow(hash(floor(uv*400.)),.998*300.);
+        col+=vec3(star*.4)*(.3+fbm(vec2(t*.05,uv.x*10.))*.7);
+        vec2 vig=uv-.5;col*=1.-dot(vig,vig)*1.2;
+        col=col/(col+.55);col=pow(col,vec3(.85));
+        gl_FragColor=vec4(col,1.);}`;
+    function mkS(t2, src) { const s = gl.createShader(t2); gl.shaderSource(s,src); gl.compileShader(s); return s; }
+    const prog = gl.createProgram();
+    gl.attachShader(prog, mkS(gl.VERTEX_SHADER, vs));
+    gl.attachShader(prog, mkS(gl.FRAGMENT_SHADER, fs));
+    gl.linkProgram(prog); gl.useProgram(prog);
+    const buf = gl.createBuffer(); gl.bindBuffer(gl.ARRAY_BUFFER, buf);
+    gl.bufferData(gl.ARRAY_BUFFER, new Float32Array([-1,-1,1,-1,-1,1,1,1]), gl.STATIC_DRAW);
+    const pL = gl.getAttribLocation(prog,'p'); gl.enableVertexAttribArray(pL); gl.vertexAttribPointer(pL,2,gl.FLOAT,false,0,0);
+    const tL = gl.getUniformLocation(prog,'t'), rL = gl.getUniformLocation(prog,'res'), mL = gl.getUniformLocation(prog,'mouse');
+    const mouse = {x:0, y:0};
+    window.addEventListener('mousemove', e => { const r = c.getBoundingClientRect(); mouse.x = e.clientX - r.left; mouse.y = c.height -
+  (e.clientY - r.top); });
+    const st = Date.now();
+    (function loop() {
+      requestAnimationFrame(loop);
+      const t2 = (Date.now() - st) / 1000;
+      gl.uniform1f(tL,t2); gl.uniform2f(rL,c.width,c.height); gl.uniform2f(mL,mouse.x,mouse.y);
+      gl.drawArrays(gl.TRIANGLE_STRIP,0,4);
+    })();
+  })();
 
-His creativity, reliability, determination, and dedication to improving mental health care made him a true asset to our organization.`
-  },
-  {
-    name:'William San Nicolas',
-    title:'Project Coordinator',
-    org:'Ketamine Clinics Los Angeles',
-    photo:'https://i.postimg.cc/cKmJxHhR/William-Professional.png',
-    initials:'WN',
-    preview:'"Julian possesses mastery in both technical competency and bedside manner. He is not just an ideas man — he takes action."',
-    full:`I have worked with Julian Macias for over 3 years and will personally vouch for his ability to contribute to your team. In short, Julian is incredible.
-
-Julian possesses mastery in both technical competency and bedside manner. He will manage his own work without the intervention of a team of admins — a rare feat among providers in my experience. Further, he will find opportunities to improve your existing workflows and execute on those recommendations if allowed. He is not just an ideas man, he takes action.
-
-Bring Julian onto your team if you want someone with a positive, can-do attitude that your patients and colleagues alike will adore.`
-  }
-];
-
-let recCur=0;
-function renderRec(){
-  const track=document.getElementById('recTrack');
-  const dots=document.getElementById('recDots');
-  track.innerHTML=recs.map((r,i)=>{
-    const hasPhoto=!r.photo.includes('placeholder');
-    const avatarHTML=hasPhoto
-      ?`<img class="rec-avatar" src="${r.photo}" alt="${r.name}"/>`
-      :`<div class="rec-avatar" style="display:flex;align-items:center;justify-content:center;background:var(--al);font-family:'Poppins',sans-serif;font-size:1.4rem;font-weight:600;color:var(--accent)">${r.initials}</div>`;
-    return`<div class="rec-slide">
-      <div class="rec-avatar-wrap" onclick="openRecModal(${i})">${avatarHTML}</div>
-      <div class="rec-click-hint">click to read full letter</div>
-      <div class="rec-name">${r.name}</div>
-      <div class="rec-title">${r.title}</div>
-      <div class="rec-org">${r.org}</div>
-      <p class="rec-preview">${r.preview}</p>
-    </div>`;
-  }).join('');
-  dots.innerHTML=recs.map((_,i)=>`<div class="rec-dot${i===recCur?' active':''}" onclick="recGo(${i})"></div>`).join('');
-  track.style.transform=`translateX(-${recCur*100}%)`;
-}
-function recMove(d){recCur=(recCur+d+recs.length)%recs.length;renderRec();}
-function recGo(i){recCur=i;renderRec();}
-
-function openRecModal(i){
-  const r=recs[i];
-  const hasPhoto=!r.photo.includes('placeholder');
-  const av=document.getElementById('modalAvatar');
-  if(hasPhoto){av.src=r.photo;av.style.display='block';}
-  else{av.style.display='none';}
-  document.getElementById('modalName').textContent=r.name;
-  document.getElementById('modalMeta').textContent=r.title;
-  document.getElementById('modalOrg').textContent=r.org;
-  document.getElementById('modalBody').innerHTML=r.full.split('\n\n').map(p=>`<p style="margin-bottom:1rem">${p}</p>`).join('');
-  document.getElementById('recModalBg').classList.add('open');
-  document.body.style.overflow='hidden';
-}
-function closeRecModal(e){
-  if(e&&e.target!==document.getElementById('recModalBg')&&e.type==='click')return;
-  document.getElementById('recModalBg').classList.remove('open');
-  document.body.style.overflow='';
-}
-document.addEventListener('keydown',e=>{if(e.key==='Escape')closeRecModal();});
-renderRec();
-function maskName(name){
-  return name.trim().split(' ').map(p=>{if(!p)return p;return`<span style="white-space:nowrap">${p[0]}<span style="filter:blur(4px);user-select:none">${p.slice(1)}</span></span>`;}).join(' ');
-}
-const reviews=[
-  {s:'google',a:'Beau Brighton',d:'4 months ago',q:'If you want to do an infusion in LA do it here. Supportive staff and highly detailed professionals. RN Julian is amazing if you get the chance to be with him.'},
-  {s:'google',a:'Tiffany Hanke',d:'2 years ago',q:'Julian is another amazing asset to this team. Like Edith, Julian has always dedicated the time to answer all my incessant questions. He has even handed me post-its as I exit with podcast recommendations to help me learn and get the most from my experiences there.'},
-  {s:'google',a:'Clint Blackwood',d:'2 years ago',q:'Unbelievably patient. Julian! Victoria! Denise! Part of me wanted to kidnap them all just to have that amazing energy around the house. After the first session you have the feeling that you are waking up after a coma, excited and looking forward to things.'},
-  {s:'google',a:'Bryn Schneider',d:'2 years ago',q:'I am so thankful to the team, especially Kevin and Julian (my favorite) for their wonderful care and ensuring I was comfortable every step of the way. I am convinced this work is going to change the world.'},
-  {s:'yelp',a:'Quinn',d:'Mar 2026',q:'Julian is the best nurse — always there when I needed something and willing to talk about anything. It made me feel very comfortable. Thank you Julian. You were absolutely right when you decided this is what you wanted to do.'},
-  {s:'yelp',a:'Jon P.',d:'Oct 2025',q:'Because of the support from Julian, my Registered Nurse, I was able to feel safe and protected, and the fear vanished. Julian and Edith were there from start to finish of each infusion — always attentive, always compassionate, always serene.'},
-  {s:'yelp',a:'Frances B.',d:'Aug 2024',q:'I cannot say enough about my gratitude to Julian who saw me through this journey and was patient and kind and supportive — someone I was able to place my full trust in to relax into the treatment. I feel optimistic about the future again.'},
-  {s:'yelp',a:'Rene B.',d:'May 2024',q:'Edith, Victoria and Julian are the most caring individuals. I am so thankful for their care, insight and compassion. They are life savers in the truest sense.'},
-  {s:'yelp',a:'Laura A.',d:'Oct 2024',q:'Julian guided me through my last session as my nurse, and was so real! He was genuinely excited about the progress I had made during my time here and his attitude was so excellent!'},
-  {s:'yelp',a:'Larynx C.',d:'Jun 2025',q:'My nurse was Julian most of the time, and he was kind and very knowledgeable. I always felt very safe. Life-changing experience.'},
-];
-let filt=reviews,cur=0,autoT;
-function renderTC(){
-  const track=document.getElementById('tcTrack'),dots=document.getElementById('tcDots');
-  track.innerHTML=filt.map(r=>`<div class="tcslide"><div class="tccard"><p class="tcq">"${r.q}"</p><div class="tcmeta"><div><div class="tcauthor">${maskName(r.a)}</div><div class="tcsrc">${r.d}</div></div><div style="display:flex;flex-direction:column;align-items:flex-end;gap:.35rem"><div class="tcstars">★★★★★</div><span class="tcbadge ${r.s}">${r.s==='yelp'?'Yelp':'Google'}</span></div></div></div></div>`).join('');
-  dots.innerHTML=filt.map((_,i)=>`<div class="tcdot${i===cur?' active':''}" onclick="tcGo(${i})"></div>`).join('');
-  track.style.transform=`translateX(-${cur*100}%)`;
-}
-function tcMove(d){cur=(cur+d+filt.length)%filt.length;renderTC();}
-function tcGo(i){cur=i;renderTC();}
-function setFilter(f,btn){filt=f==='all'?reviews:reviews.filter(r=>r.s===f);cur=0;document.querySelectorAll('.tcfbtn').forEach(b=>b.classList.remove('active'));btn.classList.add('active');renderTC();}
-function startAuto(){autoT=setInterval(()=>tcMove(1),5000);}
-document.querySelector('.tcwrap')?.addEventListener('mouseenter',()=>clearInterval(autoT));
-document.querySelector('.tcwrap')?.addEventListener('mouseleave',startAuto);
-renderTC();startAuto();
-
-// PARALLAX
-window.addEventListener('scroll',()=>{
-  const y=window.scrollY;
-  const ac=document.getElementById('auroraCanvas');
-  if(ac)ac.style.transform=`translateY(${y*.2}px)`;
-});
-</script>
-</body>
-</html>
+  // THREE.JS NEURAL PARTICLES
+  (function() {
+    const scr = document.createElement('script');
+    scr.src = 'https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js';
+    scr.crossOrigin = 'anonymous';
+    scr.onload = function() {
+      const canvas = document.getElementById('heroCanvas');
+      const W = canvas.offsetWidth, H = canvas.offsetHeight;
+      const renderer = new THREE.WebGLRenderer({canvas, alpha:true, antialias:true});
+      renderer.setPixelRatio(Math.min(window.devicePixelRatio,2));
+      renderer.setSize(W,H); renderer.setClearColor(0x000000,0);
+      const scene = new THREE.Scene(); scene.fog = new THREE.FogExp2(0x000000,0.04);
+      const camera = new THREE.PerspectiveCamera(60,W/H,.1,100); camera.position.set(0,0,18);
+      const N = 160, spread = 14, velocities = [], ptMeshes = [];
+      const ptGeo = new THREE.SphereGeometry(.1,8,8);
+      for (let i = 0; i < N; i++) {
+        const mat = new THREE.MeshBasicMaterial({color: new THREE.Color().setHSL(.52+Math.random()*.08,.7,.65+Math.random()*.2),
+  transparent:true, opacity:.6+Math.random()*.35});
+        const m = new THREE.Mesh(ptGeo, mat);
+        m.position.set((Math.random()-.5)*spread*2,(Math.random()-.5)*spread,(Math.random()-.5)*spread*1.2);
+        const s = .5+Math.random()*.9; m.scale.setScalar(s); scene.add(m); ptMeshes.push(m);
+        velocities.push((Math.random()-.5)*.01,(Math.random()-.5)*.01,(Math.random()-.5)*.007);
+        const halo = new THREE.Mesh(new THREE.SphereGeometry(.25,8,8), new
+  THREE.MeshBasicMaterial({color:0x30e8e0,transparent:true,opacity:.08,side:THREE.BackSide}));
+        m.add(halo);
+      }
+      const maxE = 500, eGeo = new THREE.BufferGeometry();
+      const ePos = new Float32Array(maxE*6), eCol = new Float32Array(maxE*6);
+      eGeo.setAttribute('position', new THREE.BufferAttribute(ePos,3));
+      eGeo.setAttribute('color', new THREE.BufferAttribute(eCol,3));
+      scene.add(new THREE.LineSegments(eGeo, new THREE.LineBasicMaterial({vertexColors:true,transparent:true,opacity:.45})));
+      const mouse = {nx:0,ny:0}; const ripples = []; let tRX=0,tRY=0,rX=0,rY=0;
+      const mv3 = new THREE.Vector3();
+      window.addEventListener('mousemove', e => { mouse.nx = e.clientX/window.innerWidth*2-1; mouse.ny =
+  -(e.clientY/window.innerHeight)*2+1; tRY = mouse.nx*.3; tRX = mouse.ny*.18; });
+      window.addEventListener('click', e => { const cx=e.clientX/window.innerWidth*2-1,cy=-(e.clientY/window.innerHeight)*2+1; const v=new
+  THREE.Vector3(cx,cy,.5).unproject(camera); ripples.push({x:v.x,y:v.y,t:0}); });
+      window.addEventListener('resize', () => { const W2=canvas.offsetWidth,H2=canvas.offsetHeight; camera.aspect=W2/H2;
+  camera.updateProjectionMatrix(); renderer.setSize(W2,H2); });
+      const clock = new THREE.Clock();
+      function animate() {
+        requestAnimationFrame(animate);
+        const dt = clock.getDelta(), el = clock.getElapsedTime();
+        rX += (tRX-rX)*.04; rY += (tRY-rY)*.04; scene.rotation.x=rX; scene.rotation.y=rY;
+        mv3.set(mouse.nx,mouse.ny,.5).unproject(camera);
+        ripples.forEach(r => r.t += dt*1.1);
