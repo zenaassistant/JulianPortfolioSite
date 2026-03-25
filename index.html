@@ -97,11 +97,11 @@ h1.htitle{font-family:-apple-system,sans-serif;
   padding:.72rem 1.75rem;border-radius:8px;font-size:.9rem;cursor:pointer;
   font-family:-apple-system,sans-serif;transition:all .25s;text-decoration:none;display:inline-block}
 .btn-g:hover{background:rgba(255,255,255,.1);transform:translateY(-2px)}
-.hstats{display:flex;gap:2rem;padding-top:1.75rem;
+.hstats{display:flex;gap:1.5rem;padding-top:1.75rem;
   border-top:1px solid rgba(168,216,218,.2);
-  opacity:0;animation:fadeIn .8s 1.8s forwards}
-.snum{font-family:-apple-system,sans-serif;font-size:1.8rem;font-weight:700;color:#a8d8da}
-.slbl{font-size:.7rem;color:rgba(255,255,255,.45);text-transform:uppercase;letter-spacing:.06em}
+  opacity:0;animation:fadeIn .8s 1.8s forwards;flex-wrap:nowrap;justify-content:space-between}
+.snum{font-family:-apple-system,sans-serif;font-size:1.6rem;font-weight:700;color:#a8d8da}
+.slbl{font-size:.62rem;color:rgba(255,255,255,.45);text-transform:uppercase;letter-spacing:.06em;white-space:nowrap}
 
 /* HERO DESKTOP PHOTO */
 .hero-photo{width:260px;height:320px;border-radius:20px;overflow:hidden;
@@ -316,10 +316,11 @@ footer span{color:#a8d8da}
   .hstats{gap:1.4rem}
 }
 @media(max-width:480px){
-  .hero-glass{padding:1.25rem;border-radius:14px}
+  .hero-glass{padding:1.5rem;border-radius:16px;width:100%}
   h1.htitle{font-size:1.65rem}
-  .hstats{gap:1rem;flex-wrap:wrap}
-  .snum{font-size:1.5rem}
+  .hstats{gap:.75rem;flex-wrap:nowrap!important}
+  .snum{font-size:1.4rem}
+  .slbl{font-size:.58rem}
   .egrid{grid-template-columns:1fr}
   .cgrid{grid-template-columns:1fr}
   .pgrid{grid-template-columns:1fr}
