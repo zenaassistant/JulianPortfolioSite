@@ -293,6 +293,48 @@ blockquote{border-left:3px solid var(--accent);padding-left:1.2rem;color:var(--t
 footer{background:var(--ad);color:rgba(255,255,255,.5);text-align:center;padding:2rem 5%;font-size:.82rem}
 footer span{color:#a8d8da}
 
+/* WAITLIST MODAL */
+.wl-bg{display:none;position:fixed;inset:0;background:rgba(0,0,0,.6);z-index:600;
+  align-items:center;justify-content:center;padding:1.5rem;backdrop-filter:blur(6px)}
+.wl-bg.open{display:flex}
+.wl-modal{background:var(--surface);border-radius:20px;max-width:480px;width:100%;
+  padding:2.25rem;position:relative;box-shadow:0 24px 60px rgba(0,0,0,.22);
+  max-height:90vh;overflow-y:auto}
+.wl-close{position:absolute;top:1rem;right:1rem;width:32px;height:32px;
+  border-radius:50%;border:1.5px solid var(--border);background:var(--surface);
+  color:var(--muted);cursor:pointer;display:flex;align-items:center;justify-content:center;
+  font-size:1rem;transition:all .2s;font-family:-apple-system,sans-serif}
+.wl-close:hover{background:var(--accent);color:#fff;border-color:var(--accent)}
+.wl-tag{font-size:.7rem;text-transform:uppercase;letter-spacing:.12em;color:var(--accent);
+  font-weight:600;margin-bottom:.4rem}
+.wl-title{font-family:-apple-system,sans-serif;font-size:1.35rem;font-weight:700;
+  color:var(--text);margin-bottom:.4rem;line-height:1.25}
+.wl-sub{font-size:.88rem;color:var(--muted);margin-bottom:1.5rem;line-height:1.6}
+.wl-field{display:flex;flex-direction:column;gap:.35rem;margin-bottom:1rem}
+.wl-field label{font-size:.75rem;font-weight:600;color:var(--muted);text-transform:uppercase;letter-spacing:.08em}
+.wl-field input{border:1.5px solid var(--border);border-radius:8px;padding:.65rem .9rem;
+  font-size:.92rem;font-family:-apple-system,sans-serif;color:var(--text);
+  background:var(--bg);transition:border-color .2s;outline:none}
+.wl-field input:focus{border-color:var(--accent)}
+.wl-checks{margin:1.1rem 0 1.4rem}
+.wl-checks-label{font-size:.75rem;font-weight:600;color:var(--muted);text-transform:uppercase;
+  letter-spacing:.08em;margin-bottom:.65rem}
+.wl-check{display:flex;align-items:center;gap:.65rem;margin-bottom:.5rem;cursor:pointer}
+.wl-check input[type=checkbox]{width:16px;height:16px;accent-color:var(--accent);cursor:pointer;flex-shrink:0}
+.wl-check span{font-size:.88rem;color:var(--text);line-height:1.4}
+.wl-submit{width:100%;background:var(--accent);color:#fff;border:none;padding:.8rem 1.5rem;
+  border-radius:8px;font-size:.95rem;font-weight:600;cursor:pointer;
+  font-family:-apple-system,sans-serif;transition:all .25s;margin-top:.25rem}
+.wl-submit:hover{background:var(--ad);transform:translateY(-2px)}
+.wl-submit:disabled{opacity:.6;cursor:not-allowed;transform:none}
+.wl-success{display:none;text-align:center;padding:1.5rem 0}
+.wl-success svg{margin-bottom:1rem}
+.wl-success h3{font-family:-apple-system,sans-serif;font-size:1.15rem;font-weight:700;
+  color:var(--text);margin-bottom:.5rem}
+.wl-success p{font-size:.88rem;color:var(--muted);line-height:1.6}
+.wl-error{display:none;background:#fff0f0;border:1px solid #f5c6c6;border-radius:8px;
+  padding:.65rem .9rem;font-size:.82rem;color:#c0392b;margin-top:.75rem;line-height:1.5}
+
 /* SCROLL REVEAL */
 .sr{opacity:0;transform:translateY(28px);transition:opacity .7s ease,transform .7s ease}
 .sr.in{opacity:1;transform:none}
@@ -372,7 +414,7 @@ footer span{color:#a8d8da}
         <div class="hbtns-left">
           <a href="#expertise" class="btn-p" style="text-align:center">My Expertise</a>
           <a href="#contact" class="btn-g" style="text-align:center">Get In Touch</a>
-          <a href="https://ketamine-intake-sandbox.web.app/" target="_blank" rel="noopener noreferrer" class="btn-g" style="text-align:center">Request a Consult</a>
+          <button class="btn-g" style="text-align:center;width:100%" onclick="openWaitlist()">Request a Consult</button>
         </div>
         <div id="mobilePhotoDiv" style="display:none;flex-shrink:0">
           <img src="https://julianmaciasPMHNP-bc.vercel.app/headshot.jpg"
@@ -667,6 +709,43 @@ footer span{color:#a8d8da}
   </div>
 </section>
 
+<!-- WAITLIST MODAL -->
+<div class="wl-bg" id="wlBg" onclick="handleWlBgClick(event)">
+  <div class="wl-modal" id="wlModal">
+    <button class="wl-close" onclick="closeWaitlist()">✕</button>
+    <div id="wlForm">
+      <div class="wl-tag">Consultation Waitlist</div>
+      <h2 class="wl-title">Join the Waitlist</h2>
+      <p class="wl-sub">Leave your details and I'll personally reach out to schedule a consultation when availability opens up.</p>
+      <div class="wl-field">
+        <label for="wlName">Full Name</label>
+        <input type="text" id="wlName" placeholder="Jane Smith" autocomplete="name"/>
+      </div>
+      <div class="wl-field">
+        <label for="wlEmail">Email Address</label>
+        <input type="email" id="wlEmail" placeholder="jane@email.com" autocomplete="email"/>
+      </div>
+      <div class="wl-field">
+        <label for="wlPhone">Phone Number</label>
+        <input type="tel" id="wlPhone" placeholder="(555) 000-0000" autocomplete="tel"/>
+      </div>
+      <div class="wl-checks">
+        <div class="wl-checks-label">I'm open to being contacted via</div>
+        <label class="wl-check"><input type="checkbox" id="wlCheckEmail"/><span>Email</span></label>
+        <label class="wl-check"><input type="checkbox" id="wlCheckText"/><span>Text message</span></label>
+        <label class="wl-check"><input type="checkbox" id="wlCheckPhone"/><span>Phone call</span></label>
+      </div>
+      <button class="wl-submit" id="wlSubmit" onclick="submitWaitlist()">Add Me to the Waitlist</button>
+      <div class="wl-error" id="wlError"></div>
+    </div>
+    <div class="wl-success" id="wlSuccess">
+      <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="M8 12l3 3 5-5"/></svg>
+      <h3>You're on the list!</h3>
+      <p>Thanks for your interest. I'll be in touch personally when consultation spots open up.</p>
+    </div>
+  </div>
+</div>
+
 <footer>
   <p>© 2025 <span>Julian Macias, PMHNP-BC</span> · Interventional Psychiatry · Los Angeles, CA</p>
   <p style="margin-top:.4rem;font-size:.74rem">Built with intention. Designed for transformation.</p>
@@ -952,6 +1031,60 @@ window.addEventListener('scroll',()=>{
   const ac=document.getElementById('auroraCanvas');
   if(ac)ac.style.transform=`translateY(${y*.2}px)`;
 });
+
+// WAITLIST MODAL
+const WAITLIST_SCRIPT_URL = 'YOUR_GOOGLE_APPS_SCRIPT_URL_HERE';
+
+function openWaitlist(){
+  document.getElementById('wlBg').classList.add('open');
+  document.body.style.overflow='hidden';
+}
+function closeWaitlist(){
+  document.getElementById('wlBg').classList.remove('open');
+  document.body.style.overflow='';
+}
+function handleWlBgClick(e){
+  if(e.target===document.getElementById('wlBg'))closeWaitlist();
+}
+document.addEventListener('keydown',e=>{if(e.key==='Escape')closeWaitlist();});
+
+async function submitWaitlist(){
+  const name=document.getElementById('wlName').value.trim();
+  const email=document.getElementById('wlEmail').value.trim();
+  const phone=document.getElementById('wlPhone').value.trim();
+  const errEl=document.getElementById('wlError');
+  errEl.style.display='none';
+
+  if(!name){showWlError('Please enter your full name.');return;}
+  if(!email||!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)){showWlError('Please enter a valid email address.');return;}
+  if(!phone){showWlError('Please enter your phone number.');return;}
+
+  const contactPrefs=[];
+  if(document.getElementById('wlCheckEmail').checked)contactPrefs.push('Email');
+  if(document.getElementById('wlCheckText').checked)contactPrefs.push('Text');
+  if(document.getElementById('wlCheckPhone').checked)contactPrefs.push('Phone call');
+
+  const btn=document.getElementById('wlSubmit');
+  btn.disabled=true;btn.textContent='Submitting…';
+
+  try{
+    await fetch(WAITLIST_SCRIPT_URL,{
+      method:'POST',
+      mode:'no-cors',
+      headers:{'Content-Type':'application/json'},
+      body:JSON.stringify({name,email,phone,contactPrefs:contactPrefs.join(', '),timestamp:new Date().toISOString()})
+    });
+    document.getElementById('wlForm').style.display='none';
+    document.getElementById('wlSuccess').style.display='block';
+  }catch(err){
+    btn.disabled=false;btn.textContent='Add Me to the Waitlist';
+    showWlError('Something went wrong. Please try again.');
+  }
+}
+function showWlError(msg){
+  const el=document.getElementById('wlError');
+  el.textContent=msg;el.style.display='block';
+}
 </script>
 </body>
 </html>
